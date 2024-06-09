@@ -46,7 +46,7 @@ const Skills = () => {
           My Arsenal of Skills
         </motion.h2>
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "
           variants={staggerContainer}
           initial="hidden"
           animate={controls}
@@ -54,10 +54,10 @@ const Skills = () => {
           {data.skills.map((category, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 bg-opacity-20 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative z-10"
+              className="bg-gray-800 bg-opacity-20 rounded-lg shadow-xl overflow-hidden transform hover:scale-110 transition-transform duration-300 relative z-10"
               variants={fadeInUp}
             >
-              <div className="relative h-48">
+              <div className="relative h-48 hover:scale-105 ">
                 <img
                   src={category.url}
                   alt={category.name}

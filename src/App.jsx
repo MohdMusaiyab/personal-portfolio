@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import video from "../src/assets/playback.mp4";
+import Footer from "./components/Footer";
 
 const App = () => {
   const scrollToSection = (id) => {
@@ -29,6 +30,9 @@ const App = () => {
         </div>
         <div id="contact" className="section">
           <Contact />
+        </div>
+        <div>
+          <Footer></Footer>
         </div>
       </div>
     </div>
