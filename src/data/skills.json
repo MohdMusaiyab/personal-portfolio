@@ -1,39 +1,39 @@
 {
-    "skills": {
-      "programmingLanguages": [
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
-        "C++"
-      ],
-      "frameworksLibraries": [
-        "React",
-        "Express.js",
-        "Next.js"
-      ],
-      "databases": [
-        "PostgreSQL",
-        "MySQL",
-        "MongoDB"
-      ],
-      "toolsTechnologies": [
-        "Docker",
-        "Kubernetes",
-        "Prisma ORM",
-        "Redux",
-        "Firebase"
-      ],
-      "frontendTechnologies": [
-        "HTML",
-        "CSS",
-        "Tailwind CSS"
-      ],
-      "otherSkills": [
+  "skills": [
+    {
+      "name": "Programming Languages",
+      "url": "https://static.vecteezy.com/system/resources/previews/004/815/622/original/software-development-programming-language-coding-3d-isometric-laptop-computer-with-digital-application-isolated-on-white-background-design-vector.jpg",
+      "skills": ["JavaScript", "C++", "C", "Typescript"]
+    },
+    {
+      "name": "Backend",
+      "url": "https://t4.ftcdn.net/jpg/02/99/62/11/360_F_299621124_vutDKbNwRJG6poJRQQIMYfsc4tJCTO5E.jpg",
+      "skills": ["Express.js", "Node.js", "Express.js", "Web-Sockets"]
+    },
+    {
+      "name": "Tools and Technologies",
+      "url": "https://t4.ftcdn.net/jpg/04/90/33/39/360_F_490333979_EQdf0tNa0W7MdstKjrGwnjQjoxfYP2zO.jpg",
+      "skills": ["Docker", "Kubernetes", "Redux", "Firebase"]
+    },
+    {
+      "name": "Databases and ORM",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgseiwlVfBo-60fELz9BiuSrB9mV9vlfX3Q&s",
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"]
+    },
+    {
+      "name": "Frontend",
+      "url": "https://t3.ftcdn.net/jpg/05/31/71/02/360_F_531710260_ByieqNe7Ut6QBHgIR7xgdsxH7gICrHr1.jpg",
+      "skills": ["HTML", "CSS", "Tailwind CSS", "Bootstrap, React.JS"]
+    },
+    {
+      "name": "Other",
+      "url": "https://document360.com/wp-content/uploads/2023/06/Introduction-to-APIs-1200x683.png",
+      "skills": [
         "API Development",
         "Authentication and Authorization",
         "Payment Gateway Integration",
         "Google Sign-In Integration"
       ]
     }
-  }
-  
+  ]
+}

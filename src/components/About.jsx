@@ -44,7 +44,7 @@ const About = () => {
 
   return (
     <motion.div
-      className="bg-white bg-opacity-10 text-white py-10 px-4 sm:px-6 lg:px-8"
+      className="text-white py-10 px-4 sm:px-6 lg:px-8"
       initial="hidden"
       animate="visible"
       variants={sectionVariants}
