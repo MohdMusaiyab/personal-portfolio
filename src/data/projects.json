@@ -1,0 +1,57 @@
+{
+  "projects": [
+    {
+      "name": "Canten Connect",
+      "description": "Food Delievery Web/Mobile Application for College Shops and Caffeteria.",
+      "keyPoints": ["Key point 1", "Key point 2", "Key point 3"],
+      "techStack": [
+        "React.JS",
+        "Node JS",
+        "Express JS",
+        "MongoDB",
+        "Firebase",
+        "Tailwind CSS"
+      ],
+      "githubRepo": "https://github.com/yourusername/project1",
+      "liveSite": "https://project1-live-site.com",
+      "images": [
+        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg",
+        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg"
+      ]
+    },
+    {
+      "name": "E-Estate",
+      "description": "Description of Project 2.",
+      "keyPoints": [
+        "Enhanced user satisfaction by implementing advanced search filters, allowing users to refine property searches based on specific criteria such as location, price range, amenities, and property type. This feature significantly improved the user experience by making property discovery more tailored and efficient",
+        "Achieved efficient image storage management by leveraging Firebase's capabilities, resulting in reduced MongoDB storage utilization. This optimization streamlined image uploads, storage, and retrieval processes, ensuring faster load times and improved overall system performance.",
+        "Implemented robust authentication protocols to ensure secure user access and data protection. By incorporating industry-standard security measures, such as encryption and secure token management, the system guarantees safe user authentication and authorization processes, mitigating risks associated with unauthorized access.",
+        "Enhanced user accessibility by integrating Google Sign-In functionality, allowing users to log in securely using their Google accounts. This integration simplified the authentication process for users while maintaining security standards, providing a convenient and trusted login option."
+      ],
+      "techStack": ["React.JS", "Node JS", "Tech 3"],
+      "githubRepo": "https://github.com/MohdMusaiyab/real-estate",
+      "liveSite": "https://e-estate.onrender.com/",
+      "images": [
+        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg",
+        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg"
+      ]
+    },
+    {
+      "name": "E-Commerce Web App",
+      "description": "Description of Project 2.",
+      "keyPoints": [
+        "Designed and developed intuitive admin and user panels that cater to the specific needs of both administrators and users. The interfaces were carefully crafted to be user-friendly, providing easy navigation and access to relevant features and functionalities. This approach ensured that administrators could efficiently manage backend operations, while users enjoyed a seamless and engaging experience.",
+        "Implemented a secure payment gateway to facilitate seamless and secure transactions within the application. This integration ensured that users could make payments confidently, using trusted payment methods, without compromising their financial information. By prioritizing security and reliability, the payment gateway contributed to a smooth and trustworthy transaction process.",
+        "Developed advanced search filters that allowed users to refine product searches based on various criteria such as price, category, and specifications. Additionally, integrated a user-friendly cart system that simplified the shopping experience, enabling users to add, remove, and manage items effortlessly. These enhancements led to a significant increase in successful product searches, improving overall user satisfaction and engagement.",
+        "Implemented robust error-handling mechanisms to detect and manage system errors effectively. By proactively identifying and addressing potential issues, such as server errors or data inconsistencies, the system achieved a notable reduction in downtime. This proactive approach enhanced the application's reliability and performance, ensuring a smoother user experience and minimizing disruptions."
+      ],
+      "techStack": ["Tech 1", "Tech 2", "Tech 3"],
+      "githubRepo": "https://github.com/MohdMusaiyab/e-commerce-frontend",
+      "liveSite": "https://mandmecommerce.onrender.com/",
+      "images": [
+        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg",
+        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg"
+      ]
+    }
+  ]
+}
