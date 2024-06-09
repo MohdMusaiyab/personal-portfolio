@@ -1,0 +1,39 @@
+{
+    "skills": {
+      "programmingLanguages": [
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "C++"
+      ],
+      "frameworksLibraries": [
+        "React",
+        "Express.js",
+        "Next.js"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB"
+      ],
+      "toolsTechnologies": [
+        "Docker",
+        "Kubernetes",
+        "Prisma ORM",
+        "Redux",
+        "Firebase"
+      ],
+      "frontendTechnologies": [
+        "HTML",
+        "CSS",
+        "Tailwind CSS"
+      ],
+      "otherSkills": [
+        "API Development",
+        "Authentication and Authorization",
+        "Payment Gateway Integration",
+        "Google Sign-In Integration"
+      ]
+    }
+  }
+  

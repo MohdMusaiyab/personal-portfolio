@@ -1,0 +1,6 @@
+/* styles.css */
+.h1:hover .inline-block {
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
