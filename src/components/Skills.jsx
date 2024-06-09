@@ -21,9 +21,9 @@ const Skills = () => {
   const ref = useRef(null);
   const controls = useAnimation();
 
-  const isInView = useInView(ref, { 
-    amount: 0.4, // 40% of the component must be in view
-    once: false, // Animate every time it comes into view
+  const isInView = useInView(ref, {
+    threshold: 0.4, // 40% of the component must be in view
+    triggerOnce: false, // Animate every time it comes into view
   });
 
   React.useEffect(() => {
@@ -35,11 +35,8 @@ const Skills = () => {
   }, [isInView, controls]);
 
   return (
-    <section 
-      ref={ref} 
-      className="py-20"
-    >
-      <div className="container mx-auto px-4">
+    <section ref={ref} className="py-10  text-white min-h-screen relative z-10">
+      <div className="container mx-auto px-4 relative z-10">
         <motion.h2
           className="text-4xl md:text-5xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-center"
           variants={fadeInUp}
@@ -57,14 +54,14 @@ const Skills = () => {
           {data.skills.map((category, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300"
+              className="bg-gray-800 bg-opacity-20 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative z-10"
               variants={fadeInUp}
             >
               <div className="relative h-48">
                 <img
                   src={category.url}
                   alt={category.name}
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 hover:opacity-80 transition-opacity duration-300"
+                  className="absolute inset-0 w-full h-full object-cover opacity-60 md:opacity-100 hover:opacity-80 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                 <h3 className="absolute inset-x-0 bottom-0 text-white text-2xl font-semibold p-4 text-shadow">
@@ -75,7 +72,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <motion.li
                     key={skillIndex}
-                    className="flex items-center space-x-3 group"
+                    className="flex items-center space-x-3 group font-semibold"
                     whileHover={{ x: 10, transition: { duration: 0.2 } }}
                   >
                     <svg

@@ -16,18 +16,6 @@ const App = () => {
 
   return (
     <div className="app relative">
-      {/* <video
-        autoPlay
-        loop
-        muted
-        id="video"
-        className="video-background"
-        onEnded={(e) => {
-          e.target.play();
-        }}
-      >
-        <source src={video} type="video/mp4" />
-      </video> */}
       <div className="content relative z-10">
         <Header scrollToSection={scrollToSection} />
         <div id="about" className="section">
