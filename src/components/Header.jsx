@@ -35,7 +35,7 @@ const Header = ({ scrollToSection }) => {
 
   return (
     <header className="text-white p-4 relative">
-      <div className="container mx-auto flex justify-between items-center">
+      <div className="container mx-auto flex justify-between items-center ">
         {/* {This is where i can chnage the Header } */}
         <div className="text-2xl font-bold"></div>
         <div className="md:hidden">
@@ -54,6 +54,12 @@ const Header = ({ scrollToSection }) => {
             className="block md:inline hover-effect"
           >
             About
+          </button>
+          <button
+            onClick={() => handleLinkClick("education")}
+            className="block md:inline hover-effect "
+          >
+            Education
           </button>
           <button
             onClick={() => handleLinkClick("skills")}

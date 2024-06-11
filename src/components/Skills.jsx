@@ -1,82 +1,44 @@
-import React, { useRef } from "react";
-import data from "../data/skills.json";
-import { motion, useInView, useAnimation } from "framer-motion";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 50 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
-};
-
-const staggerContainer = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
-  },
-};
+import React from 'react';
+import { motion } from 'framer-motion';
+import skillsData from '../data/skills.json';
 
 const Skills = () => {
-  const ref = useRef(null);
-  const controls = useAnimation();
-
-  const isInView = useInView(ref, {
-    threshold: 0.4, // 40% of the component must be in view
-    triggerOnce: false, // Animate every time it comes into view
-  });
-
-  React.useEffect(() => {
-    if (isInView) {
-      controls.start("visible");
-    } else {
-      controls.start("hidden");
-    }
-  }, [isInView, controls]);
-
   return (
-    <section ref={ref} className="py-10  text-white min-h-screen relative z-10">
-      <div className="container mx-auto px-4 relative z-10">
-        <motion.h2
-          className="text-4xl md:text-5xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-center"
-          variants={fadeInUp}
-          initial="hidden"
-          animate={controls}
-        >
-          My Arsenal of Skills
-        </motion.h2>
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 "
-          variants={staggerContainer}
-          initial="hidden"
-          animate={controls}
-        >
-          {data.skills.map((category, index) => (
+    <div className="py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
+          <span className="bg-gradient-to-r from-purple-400 to-pink-600 bg-clip-text text-transparent">
+            My Skills
+          </span>
+        </h2>
+        <div className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {skillsData.skills.map((skill, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 bg-opacity-20 rounded-lg shadow-xl overflow-hidden transform hover:scale-110 transition-transform duration-300 relative z-10"
-              variants={fadeInUp}
+              className="group bg-gradient-to-r from-gray-800 to-gray-700 rounded-lg p-6 shadow-lg hover:shadow-xl transition duration-300 ease-in-out"
+              whileHover={{ scale: 1.05 }}
             >
-              <div className="relative h-48 hover:scale-105 ">
-                <img
-                  src={category.url}
-                  alt={category.name}
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 md:opacity-100 hover:opacity-80 transition-opacity duration-300"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
-                <h3 className="absolute inset-x-0 bottom-0 text-white text-2xl font-semibold p-4 text-shadow">
-                  {category.name}
+              <div className="flex items-center mb-4">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-400 to-pink-600 flex items-center justify-center">
+                  <img
+                    src={skill.url}
+                    alt={skill.name}
+                    className="w-8 h-8 rounded-full object-cover"
+                  />
+                </div>
+                <h3 className="text-lg font-medium text-white ml-3">
+                  {skill.name}
                 </h3>
               </div>
-              <ul className="p-6 space-y-3">
-                {category.skills.map((skill, skillIndex) => (
+              <ul className="space-y-2">
+                {skill.skills.map((skillName, skillIndex) => (
                   <motion.li
                     key={skillIndex}
-                    className="flex items-center space-x-3 group font-semibold"
+                    className="text-gray-300 flex items-center"
                     whileHover={{ x: 10, transition: { duration: 0.2 } }}
                   >
                     <svg
-                      className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0"
+                      className="w-5 h-5 mr-2 text-purple-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -86,17 +48,15 @@ const Skills = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                    <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {skill}
-                    </span>
+                    {skillName}
                   </motion.li>
                 ))}
               </ul>
             </motion.div>
           ))}
-        </motion.div>
+        </div>
       </div>
-    </section>
+    </div>
   );
 };
 

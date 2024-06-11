@@ -12,11 +12,11 @@
         "Firebase",
         "Tailwind CSS"
       ],
-      "githubRepo": "https://github.com/yourusername/project1",
-      "liveSite": "https://project1-live-site.com",
+      "githubRepo": "https://github.com/Canteen-Connect",
+      "liveSite": "https://github.com/Canteen-Connect",
       "images": [
-        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg",
-        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg"
+        "../src/assets/canteen-1.png",
+        "../src/assets/canteen-2.png"
       ]
     },
     {
@@ -28,12 +28,12 @@
         "Implemented robust authentication protocols to ensure secure user access and data protection. By incorporating industry-standard security measures, such as encryption and secure token management, the system guarantees safe user authentication and authorization processes, mitigating risks associated with unauthorized access.",
         "Enhanced user accessibility by integrating Google Sign-In functionality, allowing users to log in securely using their Google accounts. This integration simplified the authentication process for users while maintaining security standards, providing a convenient and trusted login option."
       ],
-      "techStack": ["React.JS", "Node JS", "Tech 3"],
+      "techStack": ["React.JS", "Node JS", "MongoDB","Express JS" ,"Firebase","Redux","Tailwind CSS"],
       "githubRepo": "https://github.com/MohdMusaiyab/real-estate",
       "liveSite": "https://e-estate.onrender.com/",
       "images": [
-        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg",
-        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg"
+        "../src/assets/e-estate1.png",
+        "../src/assets/e-estate2.png"
       ]
     },
     {
@@ -45,12 +45,12 @@
         "Developed advanced search filters that allowed users to refine product searches based on various criteria such as price, category, and specifications. Additionally, integrated a user-friendly cart system that simplified the shopping experience, enabling users to add, remove, and manage items effortlessly. These enhancements led to a significant increase in successful product searches, improving overall user satisfaction and engagement.",
         "Implemented robust error-handling mechanisms to detect and manage system errors effectively. By proactively identifying and addressing potential issues, such as server errors or data inconsistencies, the system achieved a notable reduction in downtime. This proactive approach enhanced the application's reliability and performance, ensuring a smoother user experience and minimizing disruptions."
       ],
-      "techStack": ["Tech 1", "Tech 2", "Tech 3"],
+      "techStack": ["Node JS", "React.JS", "MongoDB","Express JS" ,"Firebase","Bootstrap"],
       "githubRepo": "https://github.com/MohdMusaiyab/e-commerce-frontend",
       "liveSite": "https://mandmecommerce.onrender.com/",
       "images": [
-        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg",
-        "https://www.shutterstock.com/image-photo/project-manager-working-on-tablet-260nw-2239986311.jpg"
+        "../src/assets/e-com1.png",
+        "../src/assets/e-com2.png"
       ]
     }
   ]

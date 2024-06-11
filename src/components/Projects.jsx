@@ -84,7 +84,7 @@ const Projects = () => {
                 <img
                   src={project.images[0]}
                   alt={project.name}
-                  className="absolute inset-0 w-full h-full object-cover opacity-60 md:opacity-100 hover:opacity-80 transition-opacity duration-300"
+                  className="absolute inset-0 w-full h-full object-cover opacity-90 md:opacity-100 hover:opacity-80 transition-opacity duration-300"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
                 <h3 className="absolute inset-x-0 bottom-0 text-white text-2xl font-semibold p-4 text-shadow">
@@ -124,9 +124,9 @@ const Projects = () => {
       {/* Modal */}
       {selectedProject && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-80 flex justify-center items-center z-50">
-          <div className="bg-white rounded-lg overflow-y-auto max-h-full max-w-lg w-full" ref={ref}>
+          <div className="bg-gray-200 rounded-lg overflow-y-auto max-h-full max-w-3xl w-full" ref={ref}>
             <button
-              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700 transition duration-300"
               onClick={closeModal}
             >
               <svg
@@ -144,22 +144,24 @@ const Projects = () => {
               </svg>
             </button>
             <div className="p-6">
-              <h2 className="text-2xl font-bold mb-4">
+              <h2 className="text-2xl font-bold mb-4 text-purple-600">
                 {selectedProject.name}
               </h2>
-              <p className="text-gray-600 mb-4">
+              <p className="text-blue-800 mb-4">
                 {selectedProject.description}
               </p>
               <ul className="space-y-2">
                 {selectedProject.keyPoints.map((point, pointIndex) => (
-                  <li key={pointIndex} className="text-gray-500">
+                  <li key={pointIndex} className="text-yellow-900">
                     {point}
                   </li>
                 ))}
               </ul>
               <ul className="space-y-2 mt-4">
                 {selectedProject.techStack.map((tech, techIndex) => (
-                  <li key={techIndex} className="flex items-center text-gray-500">
+                  <motion.li key={techIndex} className="flex items-center text-gray-500 hover:text-blue-400"
+                  whileHover={{ x: 10, transition: { duration: 0.2 } }}>
+                  
                     <svg
                       className="w-5 h-5 mr-2 text-blue-400"
                       fill="currentColor"
@@ -172,7 +174,7 @@ const Projects = () => {
                       />
                     </svg>
                     {tech}
-                  </li>
+                  </motion.li>
                 ))}
               </ul>
               <div className="mt-4">
@@ -198,9 +200,9 @@ const Projects = () => {
                 {selectedProject.images.map((image, imageIndex) => (
                   <img
                     key={imageIndex}
-                    src={(`../images/${image}`).default}
+                    src={image}
                     alt={selectedProject.name}
-                    className="rounded-lg shadow-xl object-cover h-40"
+                    className="rounded-lg shadow-xl object-cover h-64"
                   />
                 ))}
               </div>

@@ -4,8 +4,8 @@ import About from "../src/components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Skills from "./components/Skills";
-import video from "../src/assets/playback.mp4";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
 
 const App = () => {
   const scrollToSection = (id) => {
@@ -21,6 +21,9 @@ const App = () => {
         <Header scrollToSection={scrollToSection} />
         <div id="about" className="section">
           <About />
+        </div>
+        <div className="education" id="education">
+          <Education></Education>
         </div>
         <div id="skills" className="section">
           <Skills />
