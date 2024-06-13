@@ -16,3 +16,35 @@
     0 0 10px rgba(255, 255, 255, 0.7); /* Right */
   transform: scale(1.2); /* Scale effect */
 }
+/* Header styles */
+.text-white {
+  color: white;
+}
+
+/* Custom CSS for hover effect */
+.hover-effect {
+  position: relative;
+  color: white;
+  font-size: 1.25rem; /* Adjust font size */
+  transition: color 1s ease, text-shadow 0.5s ease;
+  text-decoration: none; /* Remove underline */
+}
+
+.hover-effect:hover {
+  color: white;
+  text-shadow:
+    0 0 10px rgba(255, 255, 255, 0.7), /* Top */
+    0 0 10px rgba(255, 255, 255, 0.7), /* Bottom */
+    0 0 10px rgba(255, 255, 255, 0.7), /* Left */
+    0 0 10px rgba(255, 255, 255, 0.7); /* Right */
+  transform: scale(1.2); /* Scale effect */
+}
+
+/* Scrolled state styles */
+.bg-black {
+  background-color: black;
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

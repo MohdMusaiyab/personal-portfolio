@@ -57,7 +57,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section ref={ref} className="py-10 text-white min-h-screen relative z-10">
+    <section ref={ref} className="py-20 text-white min-h-screen relative z-10">
       <div className="container mx-auto px-4 relative z-10">
         <motion.h2
           className="text-4xl md:text-5xl font-bold mb-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500 text-center"

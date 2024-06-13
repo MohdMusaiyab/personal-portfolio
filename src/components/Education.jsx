@@ -18,6 +18,11 @@ const Education = () => {
           </span>
         </h2>
         <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute inset-0 md:flex items-center justify-center sm:hidden">
+            <div className="h-full w-1 bg-gradient-to-b from-purple-400 to-pink-600 rounded-full relative"></div>
+          </div>
+
           {educationData.education.map((education, index) => (
             <AnimatePresence key={index}>
               <motion.div
@@ -28,8 +33,6 @@ const Education = () => {
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 key={index}
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
                 onClick={() => toggleCard(index)}
                 layout
               >
@@ -39,7 +42,7 @@ const Education = () => {
                   }`}
                 >
                   <motion.div
-                    className="bg-gray-800 rounded-lg shadow-lg p-6 relative z-10"
+                    className="bg-gray-800 rounded-lg shadow-lg p-6 relative z-10 education-card hover:shadow-xl transition-all duration-300"
                     layout
                   >
                     <div className="absolute top-4 right-4">
@@ -60,32 +63,38 @@ const Education = () => {
                   <AnimatePresence>
                     {activeIndex === index && (
                       <motion.div
-                        className="bg-white rounded-lg shadow-lg p-6 mt-4 absolute inset-0 backface-hidden z-20"
+                        className="bg-white rounded-lg shadow-lg p-6 mt-4 absolute inset-0 backface-hidden z-20 overflow-hidden max-w-full"
+                        style={{
+                          marginLeft: index % 2 === 0 ? "0.5rem" : "0",
+                          marginRight: index % 2 !== 0 ? "0.5rem" : "0",
+                        }}
                         initial={{ opacity: 0, rotateY: 180 }}
                         animate={{ opacity: 1, rotateY: 0 }}
                         exit={{ opacity: 0, rotateY: 180 }}
                         transition={{ duration: 0.5 }}
                       >
                         <ul className="space-y-2">
-                          {education.highlights.map((highlight, highlightIndex) => (
-                            <li
-                              key={highlightIndex}
-                              className="text-gray-800 flex items-center"
-                            >
-                              <svg
-                                className="w-5 h-5 mr-2 text-purple-500"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
+                          {education.highlights.map(
+                            (highlight, highlightIndex) => (
+                              <li
+                                key={highlightIndex}
+                                className="text-gray-800 flex  items-center "
                               >
-                                <path
-                                  fillRule="evenodd"
-                                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                  clipRule="evenodd"
-                                />
-                              </svg>
-                              {highlight}
-                            </li>
-                          ))}
+                                <svg
+                                  className="w-5 h-5 mr-2 text-purple-500"
+                                  fill="currentColor"
+                                  viewBox="0 0 20 20"
+                                >
+                                  <path
+                                    fillRule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clipRule="evenodd"
+                                  />
+                                </svg>
+                                {highlight}
+                              </li>
+                            )
+                          )}
                         </ul>
                       </motion.div>
                     )}

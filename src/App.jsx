@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../src/components/Header";
 import About from "../src/components/About";
 import Projects from "./components/Projects";
@@ -8,17 +8,20 @@ import Footer from "./components/Footer";
 import Education from "./components/Education";
 
 const App = () => {
+  const [currentSection, setCurrentSection] = useState("about");
+
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
+      setCurrentSection(id); // Update current section state
     }
   };
 
   return (
     <div className="app relative">
       <div className="content relative z-10">
-        <Header scrollToSection={scrollToSection} />
+        <Header scrollToSection={scrollToSection} currentSection={currentSection} />
         <div id="about" className="section">
           <About />
         </div>
