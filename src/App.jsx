@@ -8,20 +8,16 @@ import Footer from "./components/Footer";
 import Education from "./components/Education";
 
 const App = () => {
-  const [currentSection, setCurrentSection] = useState("about");
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
-      setCurrentSection(id); // Update current section state
     }
   };
-
   return (
     <div className="app relative">
       <div className="content relative z-10">
-        <Header scrollToSection={scrollToSection} currentSection={currentSection} />
+        <Header scrollToSection={scrollToSection} />
         <div id="about" className="section">
           <About />
         </div>
@@ -37,6 +33,7 @@ const App = () => {
         <div id="contact" className="section">
           <Contact />
         </div>
+       
         <div>
           <Footer></Footer>
         </div>
@@ -44,5 +41,4 @@ const App = () => {
     </div>
   );
 };
-
 export default App;

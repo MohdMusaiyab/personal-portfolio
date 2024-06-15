@@ -4,7 +4,7 @@ import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="min-h-screen text-white flex flex-col md:flex-row">
+    <div className="min-h-screen text-white flex flex-col md:flex-row p-20">
       {/* Left Side */}
       <div className="w-full md:w-1/2 p-8">
         <motion.h2
