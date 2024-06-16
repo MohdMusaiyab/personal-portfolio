@@ -72,7 +72,7 @@ const Contact = () => {
 
       {/* Right Side */}
       <div className="w-full md:w-1/2 p-8">
-        <div className="bg-white rounded-lg p-8 shadow-lg">
+        <div className="bg-[#8edbff] rounded-lg p-8 shadow-lg">
           <motion.h2
             className="text-3xl font-semibold mb-4 text-center bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent"
             initial={{ opacity: 0, y: 50 }}
@@ -93,7 +93,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="mt-1 block w-full p-1 border-gray-300 rounded-md shadow-sm focus:border-blue-400 focus:ring-blue-400"
+                className=" text-black mt-1 block w-full p-1 border-gray-300 rounded-md shadow-sm focus:border-blue-400 focus:ring-blue-400"
                 placeholder="Your Name"
               />
             </div>
@@ -108,7 +108,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm p-1 focus:border-blue-400 focus:ring-blue-400"
+                className="text-black mt-1 block w-full border-gray-300 rounded-md shadow-sm p-1 focus:border-blue-400 focus:ring-blue-400"
                 placeholder="Your Email"
               />
             </div>
@@ -123,7 +123,7 @@ const Contact = () => {
                 id="message"
                 name="message"
                 rows="4"
-                className="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-400 focus:ring-blue-400 p-1"
+                className="text-black mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-400 focus:ring-blue-400 p-1"
                 placeholder="Your Message"
               ></textarea>
             </div>

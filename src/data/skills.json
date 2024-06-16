@@ -3,36 +3,61 @@
     {
       "name": "Programming Languages",
       "url": "https://static.vecteezy.com/system/resources/previews/004/815/622/original/software-development-programming-language-coding-3d-isometric-laptop-computer-with-digital-application-isolated-on-white-background-design-vector.jpg",
-      "skills": ["JavaScript", "C++", "C", "Typescript"]
+      "skills": [
+        { "name": "JavaScript", "icon": "FaJsSquare" },
+        { "name": "C++", "icon": "<FaReact />" },
+        { "name": "C", "icon": "FaNodeJs" },
+        { "name": "Typescript", "icon": "FaDatabase" }
+      ]
     },
     {
       "name": "Backend",
       "url": "https://t4.ftcdn.net/jpg/02/99/62/11/360_F_299621124_vutDKbNwRJG6poJRQQIMYfsc4tJCTO5E.jpg",
-      "skills": ["Express.js", "Node.js", "Express.js", "Web-Sockets"]
+      "skills": [
+        { "name": "Express.js", "icon": "FaToolbox" },
+        { "name": "Node.js", "icon": "FaServer" },
+        { "name": "Web-Sockets", "icon": "FaToolbox" }
+      ]
     },
     {
       "name": "Tools and Technologies",
       "url": "https://t4.ftcdn.net/jpg/04/90/33/39/360_F_490333979_EQdf0tNa0W7MdstKjrGwnjQjoxfYP2zO.jpg",
-      "skills": ["Docker", "Kubernetes", "Redux", "Firebase"]
+      "skills": [
+        { "name": "Docker", "icon": "FaCube" },
+        { "name": "Kubernetes", "icon": "FaCube" },
+        { "name": "Redux", "icon": "FaToolbox" },
+        { "name": "Firebase", "icon": "FaToolbox" }
+      ]
     },
     {
       "name": "Databases and ORM",
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgseiwlVfBo-60fELz9BiuSrB9mV9vlfX3Q&s",
-      "skills": ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"]
+      "skills": [
+        { "name": "PostgreSQL", "icon": "FaDatabase" },
+        { "name": "MySQL", "icon": "FaDatabase" },
+        { "name": "MongoDB", "icon": "FaDatabase" },
+        { "name": "Prisma ORM", "icon": "FaToolbox" }
+      ]
     },
     {
       "name": "Frontend",
       "url": "https://t3.ftcdn.net/jpg/05/31/71/02/360_F_531710260_ByieqNe7Ut6QBHgIR7xgdsxH7gICrHr1.jpg",
-      "skills": ["HTML", "CSS", "Tailwind CSS", "Bootstrap, React.JS"]
+      "skills": [
+        { "name": "HTML", "icon": "FaHtml5" },
+        { "name": "CSS", "icon": "FaCss3Alt" },
+        { "name": "Tailwind CSS", "icon": "FaToolbox" },
+        { "name": "Bootstrap", "icon": "FaBootstrap" },
+        { "name": "React.JS", "icon": "FaReact" }
+      ]
     },
     {
       "name": "Other",
       "url": "https://document360.com/wp-content/uploads/2023/06/Introduction-to-APIs-1200x683.png",
       "skills": [
-        "API Development",
-        "Authentication and Authorization",
-        "Payment Gateway Integration",
-        "Google Sign-In Integration"
+        { "name": "API Development", "icon": "FaToolbox" },
+        { "name": "Authentication and Authorization", "icon": "FaToolbox" },
+        { "name": "Payment Gateway Integration", "icon": "FaToolbox" },
+        { "name": "Google Sign-In Integration", "icon": "FaToolbox" }
       ]
     }
   ]

@@ -23,8 +23,9 @@ const Education = () => {
           </span>
         </h2>
         <div className="relative">
+        
           {/* Vertical line */}
-          <div className="absolute inset-0 md:flex items-center justify-center sm:hidden">
+          <div className="hidden md:block absolute inset-0 flex items-center justify-center">
             <div className="h-full w-1 bg-gradient-to-b from-purple-400 to-pink-600 rounded-full relative"></div>
           </div>
 
@@ -38,9 +39,9 @@ const Education = () => {
               <AnimatePresence key={index}>
                 <motion.div
                   ref={ref}
-                  className={`mb-10 flex ${
-                    index % 2 === 0 ? "justify-start" : "justify-end"
-                  } items-center w-full`}
+                  className={`mb-10 flex flex-col md:flex-row items-center ${
+                    index % 2 === 0 ? "md:justify-start" : "md:justify-end"
+                  }`}
                   initial={{ opacity: 0, y: 50 }}
                   animate={inView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.6 }}
@@ -51,7 +52,7 @@ const Education = () => {
                 >
                   <div
                     className={`w-full md:w-1/2 p-6 relative ${
-                      index % 2 === 0 ? "pr-8" : "pl-8"
+                      index % 2 === 0 ? "md:pr-8" : "md:pl-8"
                     }`}
                   >
                     <motion.div
@@ -80,6 +81,7 @@ const Education = () => {
                           style={{
                             marginLeft: index % 2 === 0 ? "0.5rem" : "0",
                             marginRight: index % 2 !== 0 ? "0.5rem" : "0",
+                            transform: "translateZ(0)", // Fixes rendering issues on Safari
                           }}
                           initial={{ opacity: 0, rotateY: 180 }}
                           animate={{ opacity: 1, rotateY: 0 }}

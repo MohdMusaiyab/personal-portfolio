@@ -1,7 +1,60 @@
 import React, { useRef } from "react";
 import data from "../data/skills.json";
 import { motion, useInView, useAnimation } from "framer-motion";
+import { FaJsSquare} from "react-icons/fa";
+import { BiLogoTypescript } from "react-icons/bi";
+import { TbBrandCpp } from "react-icons/tb";
+import { SiExpress } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+import { SiSocketdotio } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { SiKubernetes } from "react-icons/si";
+import { SiRedux } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { SiMysql } from "react-icons/si";
+import { SiMongodb } from "react-icons/si";
+import { SiPrisma } from "react-icons/si";
+import { FaCss3Alt } from "react-icons/fa";
+import { FaHtml5 } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
+import { SiAuthentik } from "react-icons/si";
+import { PiContactlessPaymentLight } from "react-icons/pi";
+import { SiGoogle } from "react-icons/si";
+const apiIcon = () => (
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-S4TyBXJ_oeFxmQdcldDAiFH1ZsA1pX_aw&s" alt="API Development" className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0" />
+);
+// For the Mapping Purpose
+const skillIcons = {
+  "JavaScript": FaJsSquare,
+  "Typescript": BiLogoTypescript,
+  "C++": TbBrandCpp,
+  "Express.js": SiExpress,
+  "Node.js": FaNodeJs,
+  "Web-Sockets": SiSocketdotio,
+  "Docker": FaDocker,
+  "Kubernetes": SiKubernetes,
+  "Redux": SiRedux,
+  "Firebase": IoLogoFirebase,
+  "PostgreSQL": BiLogoPostgresql,
+  "MySQL": SiMysql,
+  "MongoDB": SiMongodb,
+  "Prisma ORM": SiPrisma,
+  "CSS": FaCss3Alt,
+  "HTML": FaHtml5,
+  "React.JS": FaReact,
+  "Tailwind CSS": RiTailwindCssFill,
+  "Bootstrap": FaBootstrap,
+  "Authentication and Authorization": SiAuthentik,
+  "Payment Gateway Integration": PiContactlessPaymentLight,
+  "Google Sign-In Integration": SiGoogle,
+  "API Development": apiIcon,
+};
 
+
+// Add icons in them
 const fadeInUp = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
@@ -68,29 +121,22 @@ const Skills = () => {
                 </h3>
               </div>
               <ul className="p-6 space-y-3">
-                {category.skills.map((skill, skillIndex) => (
+              {category.skills.map((skill, skillIndex) => {
+                const IconComponent = skillIcons[skill.name] || FaJsSquare;
+                return (
                   <motion.li
                     key={skillIndex}
                     className="flex items-center space-x-3 group font-semibold"
                     whileHover={{ x: 10, transition: { duration: 0.2 } }}
                   >
-                    <svg
-                      className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0"
-                      fill="currentColor"
-                      viewBox="0 0 20 20"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <IconComponent />
                     <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {skill}
+                      {skill.name}
                     </span>
                   </motion.li>
-                ))}
-              </ul>
+                );
+              })}
+            </ul>
             </motion.div>
           ))}
         </motion.div>
