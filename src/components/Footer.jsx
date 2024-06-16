@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="flex-col">
+    <div className="flex-col text-blue-400">
       <div>
         <p className="text-center">© 2024 Mohd Musaiyab. All Rights Reserved</p>
       </div>

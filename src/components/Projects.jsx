@@ -173,14 +173,14 @@ const Projects = () => {
 
                   <div className="modal-footer">
                     <a
-                      href={selectedProject.githubUrl}
+                      href={selectedProject.githubRepo}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       View Code on GitHub
                     </a>
-                    <a
-                      href={selectedProject.liveUrl}
+                    <a 
+                      href={selectedProject.liveSite}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

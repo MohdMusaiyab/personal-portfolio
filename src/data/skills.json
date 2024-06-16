@@ -1,123 +1,38 @@
 {
   "skills": [
     {
-      "category": "Programming Languages",
-      "categoryImageUrl": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png",
-      "skills": [
-        {
-          "name": "JavaScript",
-          "rating": 75,
-          "color": "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "C++",
-          "rating": 80,
-          "color": "#6495ED",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "C",
-          "rating": 60,
-          "color": "#4169E1",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        }
-      ]
+      "name": "Programming Languages",
+      "url": "https://static.vecteezy.com/system/resources/previews/004/815/622/original/software-development-programming-language-coding-3d-isometric-laptop-computer-with-digital-application-isolated-on-white-background-design-vector.jpg",
+      "skills": ["JavaScript", "C++", "C", "Typescript"]
     },
     {
-      "category": "Web Development",
-      "categoryImageUrl": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png",
-      "skills": [
-        {
-          "name": "TypeScript",
-          "rating": 70,
-          "color": "linear-gradient(135deg, #007ACC 0%, #66B2FF 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Express.js",
-          "rating": 80,
-          "color": "#000000",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Node.js",
-          "rating": 80,
-          "color": "linear-gradient(135deg, #43853d 0%, #8cc84b 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Redux",
-          "rating": 70,
-          "color": "linear-gradient(135deg, #764ABC 0%, #B880D9 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Prisma ORM",
-          "rating": 80,
-          "color": "#0C344B",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Tailwind CSS",
-          "rating": 80,
-          "color": "linear-gradient(135deg, #38B2AC 0%, #4FD1C5 80%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Bootstrap",
-          "rating": 60,
-          "color": "linear-gradient(135deg, #563D7C 0%, #7952B3 90%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "React.js",
-          "rating": 100,
-          "color": "linear-gradient(135deg, #61DAFB 0%, #00D8FF 70%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        }
-      ]
+      "name": "Backend",
+      "url": "https://t4.ftcdn.net/jpg/02/99/62/11/360_F_299621124_vutDKbNwRJG6poJRQQIMYfsc4tJCTO5E.jpg",
+      "skills": ["Express.js", "Node.js", "Express.js", "Web-Sockets"]
     },
     {
-      "category": "DevOps",
-      "categoryImageUrl": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png",
-      "skills": [
-        {
-          "name": "Docker",
-          "rating": 80,
-          "color": "linear-gradient(135deg, #0db7ed 0%, #384d54 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "Kubernetes",
-          "rating": 50,
-          "color": "#326CE5",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        }
-      ]
+      "name": "Tools and Technologies",
+      "url": "https://t4.ftcdn.net/jpg/04/90/33/39/360_F_490333979_EQdf0tNa0W7MdstKjrGwnjQjoxfYP2zO.jpg",
+      "skills": ["Docker", "Kubernetes", "Redux", "Firebase"]
     },
     {
-      "category": "Databases",
-      "categoryImageUrl": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png",
+      "name": "Databases and ORM",
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgseiwlVfBo-60fELz9BiuSrB9mV9vlfX3Q&s",
+      "skills": ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"]
+    },
+    {
+      "name": "Frontend",
+      "url": "https://t3.ftcdn.net/jpg/05/31/71/02/360_F_531710260_ByieqNe7Ut6QBHgIR7xgdsxH7gICrHr1.jpg",
+      "skills": ["HTML", "CSS", "Tailwind CSS", "Bootstrap, React.JS"]
+    },
+    {
+      "name": "Other",
+      "url": "https://document360.com/wp-content/uploads/2023/06/Introduction-to-APIs-1200x683.png",
       "skills": [
-        {
-          "name": "PostgreSQL",
-          "rating": 80,
-          "color": "linear-gradient(135deg, #336791 0%, #4D88BF 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "MySQL",
-          "rating": 80,
-          "color": "linear-gradient(135deg, #00758F 0%, #F29111 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        },
-        {
-          "name": "MongoDB",
-          "rating": 100,
-          "color": "linear-gradient(135deg, #449A45 0%, #58AA50 100%)",
-          "image": "https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5-thumbnail.png"
-        }
+        "API Development",
+        "Authentication and Authorization",
+        "Payment Gateway Integration",
+        "Google Sign-In Integration"
       ]
     }
   ]
