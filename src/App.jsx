@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import { BrowserRouter, Routes } from "react-router-dom";
 
 const App = () => {
   const scrollToSection = (id) => {
@@ -15,30 +16,32 @@ const App = () => {
     }
   };
   return (
-    <div className="app relative">
-      <div className="content relative z-10">
-        <Header scrollToSection={scrollToSection} />
-        <div id="about" className="section">
-          <About />
-        </div>
-        <div className="education" id="education">
-          <Education></Education>
-        </div>
-        <div id="skills" className="section">
-          <Skills />
-        </div>
-        <div id="projects" className="section">
-          <Projects />
-        </div>
-        <div id="contact" className="section">
-          <Contact />
-        </div>
-       
-        <div>
-          <Footer></Footer>
+    <BrowserRouter>
+      <div className="app relative">
+        <div className="content relative z-10">
+          <Header scrollToSection={scrollToSection} />
+          <div id="about" className="section">
+            <About />
+          </div>
+          <div className="education" id="education">
+            <Education></Education>
+          </div>
+          <div id="skills" className="section">
+            <Skills />
+          </div>
+          <div id="projects" className="section">
+            <Projects />
+          </div>
+          <div id="contact" className="section">
+            <Contact />
+          </div>
+
+          <div>
+            <Footer></Footer>
+          </div>
         </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 };
 export default App;

@@ -97,7 +97,7 @@ const Projects = () => {
                   {project.techStack.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-blue-700 text-xs text-gray-300 px-3 py-1 rounded-full mr-2 mb-2 hover:text-yellow-400 hover:bg-blue-800 transition duration-300 ease-in-out"
+                      className="bg-[#BA55D3] text-xs px-3 py-1 rounded-full mr-2 mb-2 hover:text-yellow-400 hover:bg-blue-800 transition duration-300 ease-in-out"
                     >
                       {tech}
                     </span>

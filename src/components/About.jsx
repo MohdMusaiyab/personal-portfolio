@@ -1,6 +1,7 @@
 import React from "react";
 import "../style/About.css";
 import { motion } from "framer-motion";
+import Resume from "./Resume";
 
 const About = () => {
   const sectionVariants = {
@@ -108,7 +109,7 @@ const About = () => {
                   Docker & Kubernetes:
                 </span>{" "}
                 <span className="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-500 text-transparent bg-clip-text">
-                I launch and manage constellations of services.
+                  I launch and manage constellations of services.
                 </span>
               </motion.p>
               <motion.p
@@ -119,7 +120,9 @@ const About = () => {
                 <span className="font-semibold text-[#7FFFD4]">
                   Full-Stack Explorer?
                 </span>{" "}
-                <span className="bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">Sure, I can navigate the frontend cosmos when needed. 😉</span>
+                <span className="bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
+                  Sure, I can navigate the frontend cosmos when needed. 😉
+                </span>
               </motion.p>
             </motion.div>
           </motion.div>
@@ -129,6 +132,7 @@ const About = () => {
               src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-realistic-illustration-of-a-floating-astronaut-illustrated-in-cartoon-style-for-png-image_9227109.png"
               alt="Space Explorer Musaiyab"
             />
+            <Resume></Resume>
           </motion.div>
         </div>
       </div>

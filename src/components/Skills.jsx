@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import data from "../data/skills.json";
 import { motion, useInView, useAnimation } from "framer-motion";
-import { FaJsSquare} from "react-icons/fa";
+import { FaJsSquare } from "react-icons/fa";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { SiExpress } from "react-icons/si";
@@ -24,35 +24,47 @@ import { SiAuthentik } from "react-icons/si";
 import { PiContactlessPaymentLight } from "react-icons/pi";
 import { SiGoogle } from "react-icons/si";
 const apiIcon = () => (
-  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-S4TyBXJ_oeFxmQdcldDAiFH1ZsA1pX_aw&s" alt="API Development" className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0" />
+  <img
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7-S4TyBXJ_oeFxmQdcldDAiFH1ZsA1pX_aw&s"
+    alt="API Development"
+    className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0"
+  />
 );
+const cIcon = () => (
+  <img
+    src="https://www.shutterstock.com/image-vector/copyright-icon-isolated-on-white-260nw-2435930677.jpg"
+    alt="API Development"
+    className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0"
+  />
+);
+
 // For the Mapping Purpose
 const skillIcons = {
-  "JavaScript": FaJsSquare,
-  "Typescript": BiLogoTypescript,
+  JavaScript: FaJsSquare,
+  Typescript: BiLogoTypescript,
   "C++": TbBrandCpp,
   "Express.js": SiExpress,
   "Node.js": FaNodeJs,
   "Web-Sockets": SiSocketdotio,
-  "Docker": FaDocker,
-  "Kubernetes": SiKubernetes,
-  "Redux": SiRedux,
-  "Firebase": IoLogoFirebase,
-  "PostgreSQL": BiLogoPostgresql,
-  "MySQL": SiMysql,
-  "MongoDB": SiMongodb,
+  Docker: FaDocker,
+  Kubernetes: SiKubernetes,
+  Redux: SiRedux,
+  Firebase: IoLogoFirebase,
+  PostgreSQL: BiLogoPostgresql,
+  MySQL: SiMysql,
+  MongoDB: SiMongodb,
   "Prisma ORM": SiPrisma,
-  "CSS": FaCss3Alt,
-  "HTML": FaHtml5,
+  CSS: FaCss3Alt,
+  HTML: FaHtml5,
   "React.JS": FaReact,
   "Tailwind CSS": RiTailwindCssFill,
-  "Bootstrap": FaBootstrap,
+  Bootstrap: FaBootstrap,
   "Authentication and Authorization": SiAuthentik,
   "Payment Gateway Integration": PiContactlessPaymentLight,
   "Google Sign-In Integration": SiGoogle,
   "API Development": apiIcon,
+  C: cIcon,
 };
-
 
 // Add icons in them
 const fadeInUp = {
@@ -106,7 +118,7 @@ const Skills = () => {
           {data.skills.map((category, index) => (
             <motion.div
               key={index}
-              className="bg-gray-800 bg-opacity-20 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative z-10"
+              className="bg-gray-800 bg-opacity-20 rounded-lg shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300 relative z-10 "
               variants={fadeInUp}
             >
               <div className="relative h-48">
@@ -121,22 +133,22 @@ const Skills = () => {
                 </h3>
               </div>
               <ul className="p-6 space-y-3">
-              {category.skills.map((skill, skillIndex) => {
-                const IconComponent = skillIcons[skill.name] || FaJsSquare;
-                return (
-                  <motion.li
-                    key={skillIndex}
-                    className="flex items-center space-x-3 group font-semibold"
-                    whileHover={{ x: 10, transition: { duration: 0.2 } }}
-                  >
-                    <IconComponent />
-                    <span className="text-gray-300 group-hover:text-white transition-colors duration-300">
-                      {skill.name}
-                    </span>
-                  </motion.li>
-                );
-              })}
-            </ul>
+                {category.skills.map((skill, skillIndex) => {
+                  const IconComponent = skillIcons[skill.name] || FaJsSquare;
+                  return (
+                    <motion.li
+                      key={skillIndex}
+                      className="flex items-center space-x-3 group font-semibold "
+                      whileHover={{ x: 10, transition: { duration: 0.2 } }}
+                    >
+                      <IconComponent />
+                      <span className="text-gray-300 group-hover:text-purple-400 transition-colors duration-300">
+                        {skill.name}
+                      </span>
+                    </motion.li>
+                  );
+                })}
+              </ul>
             </motion.div>
           ))}
         </motion.div>

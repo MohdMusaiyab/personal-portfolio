@@ -34,9 +34,9 @@ const Header = ({ scrollToSection }) => {
   };
 
   return (
-    <header className="text-white p-4 relative">
+    <header className="header-glass sticky text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold"></div>
+        <div className="text-2xl font-bold">My Portfolio</div>
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}
