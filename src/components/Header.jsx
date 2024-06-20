@@ -1,6 +1,7 @@
 import { Menu, X } from "react-feather";
 import React, { useState, useRef, useEffect } from "react";
 import "../style/Header.css";
+import logo from "../assets/logo.png";
 
 const Header = ({ scrollToSection }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +37,7 @@ const Header = ({ scrollToSection }) => {
   return (
     <header className="header-glass sticky text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">My Portfolio</div>
+        <img src={logo} className="h-10 w-20"></img>
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {isOpen ? <X size={24} /> : <Menu size={24} />}

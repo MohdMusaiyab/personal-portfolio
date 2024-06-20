@@ -121,7 +121,7 @@ const About = () => {
                   Full-Stack Explorer?
                 </span>{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
-                  Sure, I can navigate the frontend cosmos when needed. 😉
+                  Sure, I can navigate the frontend cosmos when needed. 
                 </span>
               </motion.p>
             </motion.div>

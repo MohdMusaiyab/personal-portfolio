@@ -1,12 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+  const service_id = import.meta.env.VITE_EMAIL_SERVICE_ID;
+  const template_id = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
+  const user_id = import.meta.env.VITE_EMAIL_USER_ID;
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(service_id, template_id, e.target, user_id)
+      .then((result) => {
+        console.log("Successfully Sent");
+      })
+      .catch((err) => {
+        console.log("Error occurred", err);
+      });
+  };
+
   return (
-    <div className="min-h-screen text-white flex flex-col md:flex-row p-20">
+    <div className="min-h-screen text-white flex flex-col md:flex-row p-8 md:p-20">
       {/* Left Side */}
-      <div className="w-full md:w-1/2 p-8">
+      <div className="w-full md:w-1/2 p-4 md:p-8">
         <motion.h2
           className="text-4xl md:text-5xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-white to-blue-600"
           initial={{ opacity: 0, y: 50 }}
@@ -56,7 +73,7 @@ const Contact = () => {
           </a>
         </motion.div>
         <motion.p
-          className="text-2xl opacity-75  text-gradient-to-r from-blue-400 to-purple-500"
+          className="text-2xl opacity-75 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent"
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
@@ -67,12 +84,11 @@ const Contact = () => {
           with me today, and let's craft the future through innovation and
           development. Your vision, my expertise - let's make magic happen!"
         </motion.p>
-      
       </div>
 
       {/* Right Side */}
-      <div className="w-full md:w-1/2 p-8">
-        <div className="bg-[#8edbff] rounded-lg p-8 shadow-lg">
+      <div className="w-full md:w-1/2 p-4 md:p-8">
+        <div className="bg-gray-800 rounded-lg p-8 shadow-lg">
           <motion.h2
             className="text-3xl font-semibold mb-4 text-center bg-gradient-to-r from-indigo-500 to-blue-500 bg-clip-text text-transparent"
             initial={{ opacity: 0, y: 50 }}
@@ -81,60 +97,33 @@ const Contact = () => {
           >
             Drop your Message Here!
           </motion.h2>
-          <form className="space-y-4">
-            <div>
-              <label
-                htmlFor="name"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className=" text-black mt-1 block w-full p-1 border-gray-300 rounded-md shadow-sm focus:border-blue-400 focus:ring-blue-400"
-                placeholder="Your Name"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="text-black mt-1 block w-full border-gray-300 rounded-md shadow-sm p-1 focus:border-blue-400 focus:ring-blue-400"
-                placeholder="Your Email"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="message"
-                className="block text-sm font-medium text-gray-700"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                className="text-black mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-blue-400 focus:ring-blue-400 p-1"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75"
-              >
-                Send Message
-              </button>
-            </div>
+          <form className="space-y-4" onSubmit={sendEmail}>
+            <input
+              type="text"
+              placeholder="Name"
+              name="user_name"
+              className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              name="user_email"
+              className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            />
+            <textarea
+              placeholder="Message"
+              name="message"
+              className="w-full p-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              className="w-full py-2 rounded bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 text-white font-semibold transition-colors duration-300"
+            >
+              Submit
+            </button>
           </form>
         </div>
       </div>
