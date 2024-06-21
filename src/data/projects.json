@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Canten Connect",
+      "name": "Canteen Connect",
       "description": "Food Delievery Web/Mobile Application for College Shops and Caffeteria.",
       "keyPoints": ["Digitizing the canteen system to reduce wait times, enhancing customer satisfaction during peak hours.", "Utilized the MERN stack for the web-based admin panel and Flutter for the mobile user app, ensuring a seamless user experience.", "Provided admin features for menu, order, and inventory management, along with order management and tracking for users.", "Implemented secure user authentication and payment gateways to ensure data privacy and secure transactions."],
       "techStack": [

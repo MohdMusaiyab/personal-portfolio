@@ -48,7 +48,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section className="py-20 text-white min-h-screen">
+    <section className="py-20 text-white min-h-screen ">
       <div className="container mx-auto px-4">
         <motion.h2
           className="text-5xl font-extrabold mb-16 text-center"
