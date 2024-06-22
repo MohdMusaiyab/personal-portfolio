@@ -1,27 +1,33 @@
-import React from "react";
+import React, { useRef } from "react";
 import { motion } from "framer-motion";
 import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import emailjs from "emailjs-com";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
   const service_id = import.meta.env.VITE_EMAIL_SERVICE_ID;
   const template_id = import.meta.env.VITE_EMAIL_TEMPLATE_ID;
   const user_id = import.meta.env.VITE_EMAIL_USER_ID;
 
+  const formRef = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
-      .sendForm(service_id, template_id, e.target, user_id)
+      .sendForm(service_id, template_id, formRef.current, user_id)
       .then((result) => {
-        console.log("Successfully Sent");
+        toast.success("Message sent successfully!");
+        formRef.current.reset();
       })
       .catch((err) => {
-        console.log("Error occurred", err);
+        toast.error("Error occurred while sending message.");
       });
   };
 
   return (
     <div className="min-h-screen text-white flex flex-col md:flex-row p-8 md:p-20">
+      <ToastContainer />
       {/* Left Side */}
       <div className="w-full md:w-1/2 p-4 md:p-8">
         <motion.h2
@@ -97,7 +103,7 @@ const Contact = () => {
           >
             Drop your Message Here!
           </motion.h2>
-          <form className="space-y-4" onSubmit={sendEmail}>
+          <form ref={formRef} className="space-y-4" onSubmit={sendEmail}>
             <input
               type="text"
               placeholder="Name"
@@ -131,4 +137,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Contact
