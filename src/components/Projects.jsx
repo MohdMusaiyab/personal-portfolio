@@ -44,7 +44,8 @@ const Projects = () => {
 
   React.useEffect(() => {
     document.addEventListener("mousedown", handleClickOutsideModal);
-    return () => document.removeEventListener("mousedown", handleClickOutsideModal);
+    return () =>
+      document.removeEventListener("mousedown", handleClickOutsideModal);
   }, []);
 
   return (
@@ -162,11 +163,18 @@ const Projects = () => {
                     </ul>
                   </div>
 
-                  <div className="tech-stack">
-                    <h3>Tech Stack:</h3>
-                    <div>
+                  <div className="tech-stack p-4 md:p-6">
+                    <h3 className="text-xl font-bold mb-2 md:text-2xl">
+                      Tech Stack:
+                    </h3>
+                    <div className="flex flex-wrap gap-2 md:gap-4">
                       {selectedProject.techStack.map((tech, index) => (
-                        <span key={index}>{tech}</span>
+                        <span
+                          key={index}
+                          className="bg-gray-200 rounded-md p-2 md:p-3"
+                        >
+                          {tech}
+                        </span>
                       ))}
                     </div>
                   </div>
@@ -179,7 +187,7 @@ const Projects = () => {
                     >
                       View Code on GitHub
                     </a>
-                    <a 
+                    <a
                       href={selectedProject.liveSite}
                       target="_blank"
                       rel="noopener noreferrer"

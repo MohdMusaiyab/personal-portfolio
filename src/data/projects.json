@@ -15,8 +15,8 @@
       "githubRepo": "https://github.com/Canteen-Connect",
       "liveSite": "https://github.com/Canteen-Connect",
       "images": [
-        "../src/assets/canteen-1.png",
-        "../src/assets/canteen-2.png"
+        "/canteen-1.png",
+        "/canteen-2.png"
       ]
     },
     {
@@ -32,8 +32,8 @@
       "githubRepo": "https://github.com/MohdMusaiyab/real-estate",
       "liveSite": "https://e-estate.onrender.com/",
       "images": [
-        "../src/assets/e-estate1.png",
-        "../src/assets/e-estate2.png"
+        "/e-estate1.png",
+        "/e-estate2.png"
       ]
     },
     {
@@ -49,8 +49,8 @@
       "githubRepo": "https://github.com/MohdMusaiyab/e-commerce-frontend",
       "liveSite": "https://mandmecommerce.onrender.com/",
       "images": [
-        "../src/assets/e-com1.png",
-        "../src/assets/e-com2.png"
+        "/e-com1.png",
+        "/e-com2.png"
       ]
     }
   ]

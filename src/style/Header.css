@@ -7,52 +7,79 @@
 .hover-effect {
   position: relative;
   color: white;
-  font-size: 1.25rem; /* Adjust font size */
-  transition: color 1s ease, text-shadow 0.5s ease;
-  text-decoration: none; /* Remove underline */
+  font-size: 1.25rem;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none;
 }
 
 .hover-effect:hover {
   color: white;
   text-shadow: 
-    0 0 10px rgba(255, 255, 255, 0.7), /* Top */
-    0 0 10px rgba(255, 255, 255, 0.7), /* Bottom */
-    0 0 10px rgba(255, 255, 255, 0.7), /* Left */
-    0 0 10px rgba(255, 255, 255, 0.7); /* Right */
-  transform: scale(1.2); /* Scale effect */
-}
-
-/* Scrolled state styles */
-.bg-black {
-  background-color: black;
-}
-
-.shadow-md {
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.7);
+  transform: scale(1.05);
 }
 
 /* Glass effect */
 .header-glass {
-  /* background: rgba(255, 255, 255, 0.2); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  /* border: 1px solid rgba(255, 255, 255, 0.3); */
 }
 
 /* Sticky header */
 .sticky {
-  position: -webkit-sticky; /* For Safari */
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+@media (min-width: 768px) {
+  nav {
+    display: flex;
+    gap: 2rem; /* Increase this value to add more space between items */
+  }
 
-.hover-effect {
-  transition: color 0.3s, transform 0.3s;
+  .hover-effect {
+    font-size: 1.5rem; /* Slightly larger font for better visibility */
+  }
+}
+/* Mobile menu styles */
+@media (max-width: 767px) {
+  .mobile-menu-closed {
+    display: none;
+
+  }
+
+  .mobile-menu-open {
+    display: flex;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mobile-menu-item {
+    flex: 1;
+    padding: 0.25rem;
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
 
-.hover-effect:hover {
-  
-  transform: scale(1.05);
+/* Adjustments for very small screens */
+@media (max-width: 360px) {
+  .mobile-menu-item {
+    font-size: 0.8rem;
+    padding: 0.2rem;
+  }
 }

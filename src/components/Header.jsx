@@ -45,40 +45,21 @@ const Header = ({ scrollToSection }) => {
         </div>
         <nav
           ref={menuRef}
-          className={`absolute md:relative right-0 top-12 md:top-0 gap-4 md:bg-transparent md:flex ${
-            isOpen ? "block" : "hidden"
-          } md:block space-y-2 md:space-y-0 md:space-x-4 p-4 md:p-0 rounded md:rounded-none`}
+          className={`md:relative md:bg-transparent md:flex ${
+            isOpen ? "mobile-menu-open" : "mobile-menu-closed"
+          } md:block md:space-y-0 md:space-x-4 md:p-0 md:rounded-none`}
         >
-          <button
-            onClick={() => handleLinkClick("about")}
-            className="block md:inline hover-effect"
-          >
-            About
-          </button>
-          <button
-            onClick={() => handleLinkClick("education")}
-            className="block md:inline hover-effect "
-          >
-            Education
-          </button>
-          <button
-            onClick={() => handleLinkClick("skills")}
-            className="block md:inline hover-effect "
-          >
-            Skills
-          </button>
-          <button
-            onClick={() => handleLinkClick("projects")}
-            className="block md:inline hover-effect"
-          >
-            Projects
-          </button>
-          <button
-            onClick={() => handleLinkClick("contact")}
-            className="block md:inline hover-effect"
-          >
-            Contact
-          </button>
+          {["about", "education", "skills", "projects", "contact"].map(
+            (item) => (
+              <button
+                key={item}
+                onClick={() => handleLinkClick(item)}
+                className="mobile-menu-item md:inline hover-effect font-semibold md:text-2xl"
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </button>
+            )
+          )}
         </nav>
       </div>
     </header>
