@@ -63,7 +63,7 @@ const About = () => {
               className="text-lg leading-relaxed mb-4 text-[#B3E0FF]"
               variants={itemVariants}
             >
-              Hey there! I'm a Backend Developer who turns coffee into scalable,
+              Hey there! I'm a Full Stack Developer who turns coffee into scalable,
               secure APIs. While frontend devs debate the perfect shade of blue,
               I'm in the digital engine room, making sure your app doesn't just
               look pretty, but actually works at light speed. 🚀💻
@@ -77,7 +77,7 @@ const About = () => {
               </motion.p>
               <motion.p className="flex items-center" variants={itemVariants}>
                 <span className="text-lg mr-2">⚡</span>
-                <span className="font-semibold text-[#7FFFD4]">
+                <span className="font-semibold text-[#7FFFD4] mr-2">
                   Node.js & TypeScript:
                 </span>
                 <span className="bg-gradient-to-r from-blue-500 via-teal-400 to-green-500 text-transparent bg-clip-text font-semibold">
@@ -86,7 +86,7 @@ const About = () => {
               </motion.p>
               <motion.p className="flex items-center" variants={itemVariants}>
                 <span className="text-lg mr-2">🔒</span>
-                <span className="font-semibold text-[#7FFFD4]">
+                <span className="font-semibold text-[#7FFFD4] mr-2">
                   PostgreSQL & MySQL:
                 </span>
                 <span className="bg-gradient-to-r from-yellow-700 via-yellow-800 to-orange-900 text-transparent bg-clip-text font-semibold">
@@ -96,16 +96,16 @@ const About = () => {
               </motion.p>
               <motion.p className="flex items-center" variants={itemVariants}>
                 <span className="text-lg mr-2">🔮</span>
-                <span className="font-semibold text-[#7FFFD4]">
+                <span className="font-semibold text-[#7FFFD4] mr-2">
                   Prisma ORM:
                 </span>
-                <span className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 text-transparent bg-clip-text">
+                <span className="bg-gradient-to-r from-blue-100 via-blue-300 to-blue-500 text-transparent bg-clip-text ">
                   Because who has time for raw SQL in the space age?
                 </span>
               </motion.p>
               <motion.p className="flex items-center" variants={itemVariants}>
                 <span className="text-lg mr-2">🐳</span>
-                <span className="font-semibold text-[#7FFFD4]">
+                <span className="font-semibold text-[#7FFFD4] mr-2">
                   Docker & Kubernetes:
                 </span>{" "}
                 <span className="bg-gradient-to-r from-indigo-900 via-indigo-700 to-indigo-500 text-transparent bg-clip-text">
@@ -117,7 +117,7 @@ const About = () => {
                 variants={itemVariants}
               >
                 <span className="text-lg mr-2">🌌</span>
-                <span className="font-semibold text-[#7FFFD4]">
+                <span className="font-semibold text-[#7FFFD4] mr-2">
                   Full-Stack Explorer?
                 </span>{" "}
                 <span className="bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text">
