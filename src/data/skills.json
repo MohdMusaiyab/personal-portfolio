@@ -43,11 +43,11 @@
       "name": "Frontend",
       "url": "https://t3.ftcdn.net/jpg/05/31/71/02/360_F_531710260_ByieqNe7Ut6QBHgIR7xgdsxH7gICrHr1.jpg",
       "skills": [
-        { "name": "HTML", "icon": "FaHtml5" },
         { "name": "CSS", "icon": "FaCss3Alt" },
         { "name": "Tailwind CSS", "icon": "FaToolbox" },
         { "name": "Bootstrap", "icon": "FaBootstrap" },
-        { "name": "React.JS", "icon": "FaReact" }
+        { "name": "React.JS", "icon": "FaReact" },
+        { "name": "Next JS", "icon": "RiNextjsLine" }
       ]
     },
     {

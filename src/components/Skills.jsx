@@ -18,6 +18,7 @@ import { SiPrisma } from "react-icons/si";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
+import { RiNextjsLine } from "react-icons/ri";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { FaBootstrap } from "react-icons/fa";
 import { SiAuthentik } from "react-icons/si";
@@ -55,7 +56,7 @@ const skillIcons = {
   MongoDB: SiMongodb,
   "Prisma ORM": SiPrisma,
   CSS: FaCss3Alt,
-  HTML: FaHtml5,
+  "Next JS": RiNextjsLine,
   "React.JS": FaReact,
   "Tailwind CSS": RiTailwindCssFill,
   Bootstrap: FaBootstrap,
