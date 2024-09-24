@@ -33,7 +33,7 @@ const apiIcon = () => (
 );
 const cIcon = () => (
   <img
-    src="https://www.shutterstock.com/image-vector/copyright-icon-isolated-on-white-260nw-2435930677.jpg"
+    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCeWXlSTpFcXKhHHYIlAvkF13WPQ07aHuorQ&s"
     alt="API Development"
     className="w-5 h-5 text-blue-400 group-hover:text-purple-400 transition-colors duration-300 flex-shrink-0"
   />
