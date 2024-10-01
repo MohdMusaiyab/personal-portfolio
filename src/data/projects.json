@@ -10,7 +10,8 @@
         "Express JS",
         "MongoDB",
         "Firebase",
-        "Tailwind CSS"
+        "Tailwind CSS",
+        "Web Socket"
       ],
       "githubRepo": "https://github.com/Canteen-Connect",
       "liveSite": "https://github.com/Canteen-Connect",
