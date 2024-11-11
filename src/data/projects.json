@@ -1,9 +1,38 @@
 {
   "projects": [
     {
+      "name": "Gossipyfy",
+      "description": "Anonymous content sharing platform with support for multiple categories and languages.",
+      "keyPoints": [
+        "Developed a platform allowing users to anonymously share media across various categories and languages, enhancing privacy and inclusivity.",
+        "Implemented sophisticated animations using Framer Motion and a smooth, responsive UI with Next.js for an engaging user experience.",
+        "Built secure and scalable user authentication using NextAuth, supporting both Google OAuth and email-password login.",
+        "Optimized media storage infrastructure with AWS S3 to handle large-scale audio content efficiently."
+      ],
+      "techStack": [
+        "PostgreSQL",
+        "NextJS",
+        "AWS",
+        "NextAuth",
+        "Prisma",
+        "Docker"
+      ],
+      "githubRepo": "https://github.com/MohdMusaiyab/gossipyfy",
+      "liveSite": "https://gossipyfy.vercel.app/",
+      "images": [
+        "/gossipyfy1.png",
+        "/gossipyfy2.png"
+      ]
+    },
+    {
       "name": "Canteen Connect",
-      "description": "Food Delievery Web/Mobile Application for College Shops and Caffeteria.",
-      "keyPoints": ["Digitizing the canteen system to reduce wait times, enhancing customer satisfaction during peak hours.", "Utilized the MERN stack for the web-based admin panel and Flutter for the mobile user app, ensuring a seamless user experience.", "Provided admin features for menu, order, and inventory management, along with order management and tracking for users.", "Implemented secure user authentication and payment gateways to ensure data privacy and secure transactions."],
+      "description": "Food Delivery Web/Mobile Application for College Shops and Cafeteria.",
+      "keyPoints": [
+        "Digitizing the canteen system to reduce wait times, enhancing customer satisfaction during peak hours.",
+        "Utilized the MERN stack for the web-based admin panel and Flutter for the mobile user app, ensuring a seamless user experience.",
+        "Provided admin features for menu, order, and inventory management, along with order management and tracking for users.",
+        "Implemented secure user authentication and payment gateways to ensure data privacy and secure transactions."
+      ],
       "techStack": [
         "React.JS",
         "Node JS",
@@ -24,12 +53,19 @@
       "name": "E-Estate",
       "description": "MERN stack based E-Estate Web Application.",
       "keyPoints": [
-        "Enhanced user satisfaction by implementing advanced search filters, allowing users to refine property searches based on specific criteria such as location, price range, amenities, and property type. This feature significantly improved the user experience by making property discovery more tailored and efficient",
-        "Achieved efficient image storage management by leveraging Firebase's capabilities, resulting in reduced MongoDB storage utilization. This optimization streamlined image uploads, storage, and retrieval processes, ensuring faster load times and improved overall system performance.",
-        "Implemented robust authentication protocols to ensure secure user access and data protection. By incorporating industry-standard security measures, such as encryption and secure token management, the system guarantees safe user authentication and authorization processes, mitigating risks associated with unauthorized access.",
-        "Enhanced user accessibility by integrating Google Sign-In functionality, allowing users to log in securely using their Google accounts. This integration simplified the authentication process for users while maintaining security standards, providing a convenient and trusted login option."
+        "Enhanced user satisfaction by implementing advanced search filters, allowing users to refine property searches based on specific criteria such as location, price range, amenities, and property type.",
+        "Achieved efficient image storage management by leveraging Firebase's capabilities, resulting in reduced MongoDB storage utilization.",
+        "Implemented robust authentication protocols to ensure secure user access and data protection.",
+        "Enhanced user accessibility by integrating Google Sign-In functionality, allowing users to log in securely using their Google accounts."
       ],
-      "techStack": ["React.JS", "Node JS", "MongoDB","Express JS" ,"Redux","Tailwind CSS"],
+      "techStack": [
+        "React.JS",
+        "Node JS",
+        "MongoDB",
+        "Express JS",
+        "Redux",
+        "Tailwind CSS"
+      ],
       "githubRepo": "https://github.com/MohdMusaiyab/real-estate",
       "liveSite": "https://e-estate.onrender.com/",
       "images": [
@@ -41,12 +77,19 @@
       "name": "E-Commerce Web App",
       "description": "MERN stack based E-commerce Web Application.",
       "keyPoints": [
-        "Designed and developed intuitive admin and user panels that cater to the specific needs of both administrators and users. The interfaces were carefully crafted to be user-friendly, providing easy navigation and access to relevant features and functionalities. This approach ensured that administrators could efficiently manage backend operations, while users enjoyed a seamless and engaging experience.",
-        "Implemented a secure payment gateway to facilitate seamless and secure transactions within the application. This integration ensured that users could make payments confidently, using trusted payment methods, without compromising their financial information. By prioritizing security and reliability, the payment gateway contributed to a smooth and trustworthy transaction process.",
-        "Developed advanced search filters that allowed users to refine product searches based on various criteria such as price, category, and specifications. Additionally, integrated a user-friendly cart system that simplified the shopping experience, enabling users to add, remove, and manage items effortlessly. These enhancements led to a significant increase in successful product searches, improving overall user satisfaction and engagement.",
-        "Implemented robust error-handling mechanisms to detect and manage system errors effectively. By proactively identifying and addressing potential issues, such as server errors or data inconsistencies, the system achieved a notable reduction in downtime. This proactive approach enhanced the application's reliability and performance, ensuring a smoother user experience and minimizing disruptions."
+        "Designed and developed intuitive admin and user panels that cater to the specific needs of both administrators and users.",
+        "Implemented a secure payment gateway to facilitate seamless and secure transactions within the application.",
+        "Developed advanced search filters and a user-friendly cart system, simplifying product discovery and checkout experience.",
+        "Implemented robust error-handling mechanisms to detect and manage system errors effectively, enhancing the application's reliability and performance."
       ],
-      "techStack": ["Node JS", "React.JS", "MongoDB","Express JS" ,"Firebase","Bootstrap"],
+      "techStack": [
+        "Node JS",
+        "React.JS",
+        "MongoDB",
+        "Express JS",
+        "Firebase",
+        "Bootstrap"
+      ],
       "githubRepo": "https://github.com/MohdMusaiyab/e-commerce-frontend",
       "liveSite": "https://mandmecommerce.onrender.com/",
       "images": [
