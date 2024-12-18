@@ -118,13 +118,13 @@ const Projects = () => {
       <AnimatePresence>
         {selectedProject && (
           <motion.div
-            className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 p-4"
+            className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50 p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
           >
             <motion.div
-              className="bg-white text-gray-900 rounded-lg overflow-hidden max-w-4xl w-full"
+              className="bg-black text-white rounded-xl shadow-2xl overflow-hidden max-w-4xl w-full max-h-[90vh] overflow-y-auto"
               ref={modalRef}
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
@@ -132,11 +132,17 @@ const Projects = () => {
               transition={{ type: "spring", damping: 20, stiffness: 300 }}
             >
               <div className="modal-content">
-                <div className="modal-header">
-                  <h2>{selectedProject.name}</h2>
-                  <button onClick={closeModal}>
+                {/* Modal Header */}
+                <div className="modal-header p-6 flex justify-between items-center">
+                  <h2 className="text-2xl font-bold hover:text-blue-500 transition-colors duration-300">
+                    {selectedProject.name}
+                  </h2>
+                  <button
+                    onClick={closeModal}
+                    className="text-white hover:text-blue-500 transition-colors duration-300 transform hover:scale-110"
+                  >
                     <svg
-                      className="w-6 h-6"
+                      className="w-8 h-8"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -151,27 +157,41 @@ const Projects = () => {
                   </button>
                 </div>
 
-                <div className="modal-body">
-                  <p>{selectedProject.description}</p>
+                {/* Modal Body */}
+                <div className="modal-body p-6 space-y-6">
+                  <p className="leading-relaxed hover:text-blue-400 transition-colors duration-300">
+                    {selectedProject.description}
+                  </p>
 
-                  <div className="key-features">
-                    <h3>Key Features:</h3>
-                    <ul>
+                  {/* Key Features Section */}
+                  <div className="key-features rounded-lg p-4 transition-colors duration-300 hover:shadow-lg">
+                    <h3 className="text-xl font-semibold text-sky-400 mb-3 hover:text-sky-300 transition-colors duration-300">
+                      Key Features:
+                    </h3>
+                    <ul className="list-disc list-inside space-y-2">
                       {selectedProject.keyPoints.map((point, index) => (
-                        <li key={index}>{point}</li>
+                        <li
+                          key={index}
+                          className="hover:text-sky-400 transition-colors duration-300"
+                        >
+                          {point}
+                        </li>
                       ))}
                     </ul>
                   </div>
 
-                  <div className="tech-stack p-4 md:p-6">
-                    <h3 className="text-xl font-bold mb-2 md:text-2xl">
+                  {/* Tech Stack Section */}
+                  <div className="tech-stack rounded-lg p-4 hover:transition-colors duration-300">
+                    <h3 className="text-xl font-semibold text-blue-400 mb-3 hover:text-blue-300 transition-colors duration-300">
                       Tech Stack:
                     </h3>
-                    <div className="flex flex-wrap gap-2 md:gap-4">
+                    <div className="flex flex-wrap gap-2">
                       {selectedProject.techStack.map((tech, index) => (
                         <span
                           key={index}
-                          className="bg-gray-200 rounded-md p-2 md:p-3"
+                          className="bg-gray-700 text-white rounded-md px-3 py-1 text-sm 
+                    hover:bg-blue-500 hover:text-white transition-colors duration-300 
+                    transform hover:scale-105"
                         >
                           {tech}
                         </span>
@@ -179,11 +199,15 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <div className="modal-footer">
+                  {/* Modal Footer */}
+                  <div className="modal-footer flex justify-between mt-6">
                     <a
                       href={selectedProject.githubRepo}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="text-white px-4 py-2 rounded-md 
+                hover:shadow-lg 
+                transition-all duration-300 transform hover:-translate-y-1"
                     >
                       View Code on GitHub
                     </a>
@@ -191,17 +215,23 @@ const Projects = () => {
                       href={selectedProject.liveSite}
                       target="_blank"
                       rel="noopener noreferrer"
+                      className="text-white px-4 py-2 rounded-md 
+                 hover:shadow-lg 
+                transition-all duration-300 transform hover:-translate-y-1"
                     >
                       View Live Site
                     </a>
                   </div>
 
-                  <div className="modal-images">
+                  {/* Modal Images */}
+                  <div className="modal-images grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                     {selectedProject.images.map((image, index) => (
                       <img
                         key={index}
                         src={image}
                         alt={`Screenshot ${index + 1}`}
+                        className="rounded-lg shadow-lg object-cover w-full h-auto 
+                  hover:scale-105 transition-transform duration-300 cursor-pointer"
                       />
                     ))}
                   </div>
