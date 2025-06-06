@@ -1,0 +1,33 @@
+{
+  "experience": [
+    {
+      "company": "Lightning Technologies",
+      "logo": "/experience1.png",
+      "duration": {
+        "start": "Jan 2025",
+        "end": "June 2025"
+      },
+      "position": "React Intern",
+      "location": "Remote (India)",
+      "highlights": [
+        "Developed 15+ reusable React components using TypeScript and Tailwind CSS, reducing development time by 30% for future features",
+        "Integrated 50+ REST APIs with React-Redux applications, implementing efficient data fetching patterns and error handling",
+        "Optimized critical components using React.memo and useCallback, improving rendering performance by 40% in various modules",
+        "Implemented Framer Motion animations across 10+ UI elements, enhancing user engagement.",
+        "Collaborated in Agile team of 8+ developers using Jira and Git workflows."
+      ],
+      "skills": [
+        "TypeScript",
+        "React",
+        "Redux",
+        "Tailwind CSS",
+        "Framer Motion",
+        "REST APIs",
+        "Postman",
+        "Jira",
+        "Git/GitHub",
+        "Performance Optimization"
+      ]
+    }
+  ]
+}
