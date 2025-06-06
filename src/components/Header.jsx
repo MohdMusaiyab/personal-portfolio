@@ -49,17 +49,22 @@ const Header = ({ scrollToSection }) => {
             isOpen ? "mobile-menu-open" : "mobile-menu-closed"
           } md:block md:space-y-0 md:space-x-4 md:p-0 md:rounded-none`}
         >
-          {["about", "education", "skills", "projects", "contact"].map(
-            (item) => (
-              <button
-                key={item}
-                onClick={() => handleLinkClick(item)}
-                className="mobile-menu-item md:inline hover-effect font-semibold md:text-2xl"
-              >
-                {item.charAt(0).toUpperCase() + item.slice(1)}
-              </button>
-            )
-          )}
+          {[
+            "about",
+            "experience",
+            "education",
+            "skills",
+            "projects",
+            "contact",
+          ].map((item) => (
+            <button
+              key={item}
+              onClick={() => handleLinkClick(item)}
+              className="mobile-menu-item md:inline hover-effect font-semibold md:text-2xl"
+            >
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </button>
+          ))}
         </nav>
       </div>
     </header>

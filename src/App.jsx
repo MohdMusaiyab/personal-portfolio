@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
 import { BrowserRouter, Routes } from "react-router-dom";
+import Experience from "./components/Experience";
 
 const App = () => {
   const scrollToSection = (id) => {
@@ -22,6 +23,9 @@ const App = () => {
           <Header scrollToSection={scrollToSection} />
           <div id="about" className="section">
             <About />
+          </div>
+          <div className="experience" id="experience">
+            <Experience />
           </div>
           <div className="education" id="education">
             <Education></Education>

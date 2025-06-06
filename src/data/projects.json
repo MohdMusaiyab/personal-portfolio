@@ -1,6 +1,30 @@
 {
   "projects": [
     {
+      "name": "Mess-Bazaar",
+      "description": "Next.js bidding platform connecting mess contractors with institutions through competitive bidding system.",
+      "keyPoints": [
+        "Built a full-stack bidding platform connecting mess contractors with institutions through competitive bidding system, streamlining food service procurement.",
+        "Engineered real-time WebSocket-based chat and profile management with 5-point rating system for multiple user roles.",
+        "Implemented smooth UI animations using Framer Motion for bidding transitions and interactive elements.",
+        "Designed secure platform with JWT authentication, role-based access control (4+ roles), and mobile-friendly UI."
+      ],
+      "techStack": [
+        "Next.js",
+        "Node.js",
+        "NextAuth",
+        "Socket.IO",
+        "TypeScript",
+        "TailwindCSS",
+        "Framer Motion",
+        "Prisma",
+        "PostgreSQL"
+      ],
+      "githubRepo": "https://github.com/MohdMusaiyab/MessMatch",
+      "liveSite": "https://mess-bazaar.vercel.app",
+      "images": ["/mess-bazaar1.png", "/mess-bazaar2.png"]
+    },
+    {
       "name": "Gossipyfy",
       "description": "Anonymous content sharing platform with support for multiple categories and languages.",
       "keyPoints": [
@@ -19,10 +43,7 @@
       ],
       "githubRepo": "https://github.com/MohdMusaiyab/gossipyfy",
       "liveSite": "https://gossipyfy.vercel.app/",
-      "images": [
-        "/gossipyfy1.png",
-        "/gossipyfy2.png"
-      ]
+      "images": ["/gossipyfy1.png", "/gossipyfy2.png"]
     },
     {
       "name": "Canteen Connect",
@@ -44,10 +65,7 @@
       ],
       "githubRepo": "https://github.com/Canteen-Connect",
       "liveSite": "https://github.com/Canteen-Connect",
-      "images": [
-        "/canteen-1.png",
-        "/canteen-2.png"
-      ]
+      "images": ["/canteen-1.png", "/canteen-2.png"]
     },
     {
       "name": "E-Estate",
@@ -68,10 +86,7 @@
       ],
       "githubRepo": "https://github.com/MohdMusaiyab/real-estate",
       "liveSite": "https://e-estate.onrender.com/",
-      "images": [
-        "/e-estate1.png",
-        "/e-estate2.png"
-      ]
+      "images": ["/e-estate1.png", "/e-estate2.png"]
     },
     {
       "name": "E-Commerce Web App",
@@ -92,10 +107,7 @@
       ],
       "githubRepo": "https://github.com/MohdMusaiyab/e-commerce-frontend",
       "liveSite": "https://mandmecommerce.onrender.com/",
-      "images": [
-        "/e-com1.png",
-        "/e-com2.png"
-      ]
+      "images": ["/e-com1.png", "/e-com2.png"]
     }
   ]
 }
