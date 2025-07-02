@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Resume from "./Resume";
+import ImageSlider from "./Image";
 
 const About = () => {
   // Color definitions
@@ -56,9 +57,9 @@ const About = () => {
       animate="visible"
       variants={sectionVariants}
     >
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-12">
-          <motion.div className="md:w-1/2 mb-6 md:mb-0 text-center md:text-left">
+          <motion.div className="md:w-1/2 mb-6 md:mb-0">
             <motion.h1
               className="text-4xl md:text-5xl font-bold mb-6"
               style={{ color: colors.primary }}
@@ -80,21 +81,22 @@ const About = () => {
             </motion.p>
 
             <motion.div className="space-y-4" style={{ color: colors.text }}>
-              <motion.div className="flex items-start" variants={itemVariants}>
-                <span
-                  className="text-xl mr-3 mt-1"
-                  style={{ color: colors.primary }}
-                >
-                  🛠️
-                </span>
-                <div>
+              <motion.div className="block" variants={itemVariants}>
+                <div className="flex items-start mb-2">
+                  <span
+                    className="text-xl mr-3 mt-1"
+                    style={{ color: colors.primary }}
+                  >
+                    🛠️
+                  </span>
                   <h3
-                    className="font-semibold text-lg mb-2"
+                    className="font-semibold text-lg"
                     style={{ color: colors.secondary }}
                   >
                     My Cosmic Toolkit
                   </h3>
-                  <ul className="space-y-3">
+                </div>
+                <ul className="space-y-3 ml-0">
                     <motion.li
                       className="flex items-start"
                       variants={itemVariants}
@@ -180,8 +182,7 @@ const About = () => {
                         Sure, I can navigate the frontend cosmos when needed.
                       </span>
                     </motion.li>
-                  </ul>
-                </div>
+                </ul>
               </motion.div>
             </motion.div>
           </motion.div>
@@ -190,12 +191,15 @@ const About = () => {
             className="md:w-1/2 flex flex-col items-center"
             variants={imageVariants}
           >
-            <img
+            {/* <img
               className="rounded-lg shadow-lg w-full max-w-md hover:shadow-xl transition-all duration-300"
               src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-realistic-illustration-of-a-floating-astronaut-illustrated-in-cartoon-style-for-png-image_9227109.png"
-              alt="Space Explorer Musaiyab"
-            />
-            <Resume />
+              alt="Musaiyab"
+            /> */}
+            <ImageSlider/>
+
+            {/* Resume component would go here */}
+           <Resume/>
           </motion.div>
         </div>
       </div>

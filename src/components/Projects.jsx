@@ -50,7 +50,7 @@ const Projects = () => {
 
   return (
     <section className="py-20 text-white min-h-screen">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2">
         <motion.h2
           className="text-5xl font-extrabold mb-16 text-center"
           initial={{ opacity: 0, y: -50 }}
