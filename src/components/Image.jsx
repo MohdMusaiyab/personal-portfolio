@@ -5,11 +5,14 @@ import { motion, useMotionValue, useAnimationFrame } from "framer-motion";
 const images = [
     "./personal1.jpg",
     "./personal2.png",
+    "./personal3.jpeg",
+    "./personal4.jpeg",
+    "./personal5.jpeg",
 ];
 
 const SLIDE_WIDTH = 500;
 const SLIDE_HEIGHT = 300;
-const SPEED = 50; // pixels per second
+const SPEED = 90; // pixels per second
 
 const ImageSlider = () => {
     const x = useMotionValue(0);
