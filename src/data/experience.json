@@ -1,6 +1,34 @@
 {
   "experience": [
     {
+      "company": "Infosys",
+      "logo": "/experience2.png",
+      "duration": {
+        "start": "Aug 2025",
+        "end": "Present"
+      },
+      "position": "System Engineer Trainee",
+      "location": "Mysore, India",
+      "highlights": [
+        "Currently undergoing intensive corporate engineering training covering Core Java, OOP, SQL (HSQL), software development fundamentals, and enterprise-grade SDLC practices.",
+        "Gaining exposure to Salesforce ecosystem, CRM data models, automation flows, and integration concepts as part of role-based training.",
+        "Practicing Agile, version control (Git), documentation, testing principles, and collaborative engineering workflows followed in large-scale delivery environments."
+      ],
+      "skills": [
+        "Core Java",
+        "OOP",
+        "SQL",
+        "HSQL",
+        "Salesforce",
+        "CRM",
+        "SDLC",
+        "Agile",
+        "Git",
+        "Testing",
+        "Documentation"
+      ]
+    },
+    {
       "company": "Lightning Technologies",
       "logo": "/experience1.png",
       "duration": {

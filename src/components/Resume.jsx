@@ -1,4 +1,3 @@
-import React from "react";
 import { FaArrowRightFromBracket } from "react-icons/fa6";
 
 const Resume = () => {
