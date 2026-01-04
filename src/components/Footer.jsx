@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="flex-col text-blue-400">
       <div>
-        <p className="text-center">© 2024 Mohd Musaiyab. All Rights Reserved</p>
+        <p className="text-center">© 2026 Mohd Musaiyab. All Rights Reserved</p>
       </div>
       <div className="flex items-center justify-center">
         <p>Made with </p>

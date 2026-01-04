@@ -74,7 +74,5 @@
   font-style: italic;
 }
 body {
-  background-image: url("../src/assets/mesh.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: rgb(19, 19, 19);
 }

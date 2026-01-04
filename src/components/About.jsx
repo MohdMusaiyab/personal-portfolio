@@ -1,14 +1,12 @@
-import React from "react";
 import { motion } from "framer-motion";
 import Resume from "./Resume";
 import ImageSlider from "./Image";
 
 const About = () => {
-  // Color definitions
   const colors = {
-    primary: "#8B5CF6", // Purple (for headings and accents)
-    secondary: "#06B6D4", // Teal (for subheadings)
-    text: "#E0E7FF", // Light blue (for body text)
+    primary: "#8B5CF6",
+    secondary: "#06B6D4",
+    text: "#E0E7FF",
   };
 
   const sectionVariants = {
@@ -97,91 +95,91 @@ const About = () => {
                   </h3>
                 </div>
                 <ul className="space-y-3 ml-0">
-                    <motion.li
-                      className="flex items-start"
-                      variants={itemVariants}
+                  <motion.li
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span
+                      className="mr-2 mt-1"
+                      style={{ color: colors.secondary }}
                     >
-                      <span
-                        className="mr-2 mt-1"
-                        style={{ color: colors.secondary }}
-                      >
-                        ⚡
-                      </span>
-                      <span>
-                        <strong style={{ color: colors.secondary }}>
-                          Node.js & TypeScript:
-                        </strong>{" "}
-                        Backend engines that scale faster than gossip.
-                      </span>
-                    </motion.li>
-                    <motion.li
-                      className="flex items-start"
-                      variants={itemVariants}
+                      ⚡
+                    </span>
+                    <span>
+                      <strong style={{ color: colors.secondary }}>
+                        Node.js & TypeScript:
+                      </strong>{" "}
+                      Backend engines that scale faster than gossip.
+                    </span>
+                  </motion.li>
+                  <motion.li
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span
+                      className="mr-2 mt-1"
+                      style={{ color: colors.secondary }}
                     >
-                      <span
-                        className="mr-2 mt-1"
-                        style={{ color: colors.secondary }}
-                      >
-                        🔒
-                      </span>
-                      <span>
-                        <strong style={{ color: colors.secondary }}>
-                          PostgreSQL & MySQL:
-                        </strong>{" "}
-                        Data vaults, uncrackable even by alien tech.
-                      </span>
-                    </motion.li>
-                    <motion.li
-                      className="flex items-start"
-                      variants={itemVariants}
+                      🔒
+                    </span>
+                    <span>
+                      <strong style={{ color: colors.secondary }}>
+                        PostgreSQL & MySQL:
+                      </strong>{" "}
+                      Data vaults, uncrackable even by alien tech.
+                    </span>
+                  </motion.li>
+                  <motion.li
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span
+                      className="mr-2 mt-1"
+                      style={{ color: colors.secondary }}
                     >
-                      <span
-                        className="mr-2 mt-1"
-                        style={{ color: colors.secondary }}
-                      >
-                        🔮
-                      </span>
-                      <span>
-                        <strong style={{ color: colors.secondary }}>
-                          Prisma ORM:
-                        </strong>{" "}
-                        Because who has time for raw SQL in the space age?
-                      </span>
-                    </motion.li>
-                    <motion.li
-                      className="flex items-start"
-                      variants={itemVariants}
+                      🔮
+                    </span>
+                    <span>
+                      <strong style={{ color: colors.secondary }}>
+                        Prisma ORM:
+                      </strong>{" "}
+                      Because who has time for raw SQL in the space age?
+                    </span>
+                  </motion.li>
+                  <motion.li
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span
+                      className="mr-2 mt-1"
+                      style={{ color: colors.secondary }}
                     >
-                      <span
-                        className="mr-2 mt-1"
-                        style={{ color: colors.secondary }}
-                      >
-                        🐳
-                      </span>
-                      <span>
-                        <strong style={{ color: colors.secondary }}>
-                          Docker & Kubernetes:
-                        </strong>{" "}
-                        I launch and manage constellations of services.
-                      </span>
-                    </motion.li>
-                    <motion.li
-                      className="flex items-start"
-                      variants={itemVariants}
+                      🐳
+                    </span>
+                    <span>
+                      <strong style={{ color: colors.secondary }}>
+                        Docker & Kubernetes:
+                      </strong>{" "}
+                      I launch and manage constellations of services.
+                    </span>
+                  </motion.li>
+                  <motion.li
+                    className="flex items-start"
+                    variants={itemVariants}
+                  >
+                    <span
+                      className="mr-2 mt-1"
+                      style={{ color: colors.secondary }}
                     >
-                      <span
-                        className="mr-2 mt-1"
-                        style={{ color: colors.secondary }}
-                      >
-                        🌌
-                      </span>
-                      <span>
-                        <strong style={{ color: colors.secondary }}>
-                          Full-Stack Explorer:
-                        </strong>{" "}
-                        Sure, I can navigate the frontend cosmos when needed.
-                      </span>
-                    </motion.li>
+                      🌌
+                    </span>
+                    <span>
+                      <strong style={{ color: colors.secondary }}>
+                        Full-Stack Explorer:
+                      </strong>{" "}
+                      Sure, I can navigate the frontend cosmos when needed.
+                    </span>
+                  </motion.li>
                 </ul>
               </motion.div>
             </motion.div>
@@ -191,15 +189,9 @@ const About = () => {
             className="md:w-1/2 flex flex-col items-center"
             variants={imageVariants}
           >
-            {/* <img
-              className="rounded-lg shadow-lg w-full max-w-md hover:shadow-xl transition-all duration-300"
-              src="https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-realistic-illustration-of-a-floating-astronaut-illustrated-in-cartoon-style-for-png-image_9227109.png"
-              alt="Musaiyab"
-            /> */}
-            <ImageSlider/>
+            <ImageSlider />
 
-            {/* Resume component would go here */}
-           <Resume/>
+            <Resume />
           </motion.div>
         </div>
       </div>
