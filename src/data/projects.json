@@ -1,13 +1,36 @@
 {
   "projects": [
     {
-      "name": "Mess-Bazaar",
-      "description": "Next.js bidding platform connecting mess contractors with institutions through competitive bidding system.",
+      "name": "Infybite",
+      "description": "High-concurrency multi-tenant system built with Go to digitize enterprise food court operations and inventory tracking.",
       "keyPoints": [
-        "Built a full-stack bidding platform connecting mess contractors with institutions through competitive bidding system, streamlining food service procurement.",
-        "Engineered real-time WebSocket-based chat and profile management with 5-point rating system for multiple user roles.",
+        "Architected a high-performance backend in Go (Gin) featuring 4-level Role-Based Access Control (RBAC) for Admins, Vendors, Managers, and Users.",
+        "Engineered real-time state synchronization via WebSockets, allowing zero-latency menu updates and item tracking across multiple locations.",
+        "Implemented a secure authentication pipeline using JWT with Refresh Tokens and HttpOnly Cookies to mitigate XSS and CSRF vulnerabilities.",
+        "Designed a scalable multi-tenant data model using GORM and MongoDB to manage independent inventory and vendor statuses."
+      ],
+      "techStack": [
+        "Go (Golang)",
+        "Gin Gonic",
+        "React",
+        "MongoDB",
+        "WebSockets",
+        "GORM",
+        "Redux Toolkit",
+        "JWT"
+      ],
+      "githubRepo": "https://github.com/MohdMusaiyab/infybyte",
+      "liveSite": "https://infybite.vercel.app/",
+      "images": ["/infyOne.png", "/infytwo.png"]
+    },
+    {
+      "name": "Mess-Bazaar",
+      "description": "Next.js bidding platform connecting mess contractors with institutions through a competitive tendering system.",
+      "keyPoints": [
+        "Orchestrated a full-stack tendering platform using Next.js and Prisma, supporting 10+ production-grade pages for institutional bidding workflows.",
+        "Engineered real-time WebSocket-based chat and profile management with a 5-point rating system for multiple user roles.",
         "Implemented smooth UI animations using Framer Motion for bidding transitions and interactive elements.",
-        "Designed secure platform with JWT authentication, role-based access control (4+ roles), and mobile-friendly UI."
+        "Designed a secure platform with JWT authentication, role-based access control (4+ roles), and a mobile-friendly UI."
       ],
       "techStack": [
         "Next.js",
@@ -26,10 +49,10 @@
     },
     {
       "name": "Gossipyfy",
-      "description": "Anonymous content sharing platform with support for multiple categories and languages.",
+      "description": "Anonymous content sharing platform with support for multiple categories, languages, and audio content.",
       "keyPoints": [
-        "Developed a platform allowing users to anonymously share media across various categories and languages, enhancing privacy and inclusivity.",
-        "Implemented sophisticated animations using Framer Motion and a smooth, responsive UI with Next.js for an engaging user experience.",
+        "Developed a voice-first social platform utilizing AWS S3 for scalable, category-based audio uploads and multilingual content handling.",
+        "Implemented sophisticated animations using Framer Motion and a responsive UI with Next.js for an engaging user experience.",
         "Built secure and scalable user authentication using NextAuth, supporting both Google OAuth and email-password login.",
         "Optimized media storage infrastructure with AWS S3 to handle large-scale audio content efficiently."
       ],
@@ -50,8 +73,8 @@
       "description": "Food Delivery Web/Mobile Application for College Shops and Cafeteria.",
       "keyPoints": [
         "Digitizing the canteen system to reduce wait times, enhancing customer satisfaction during peak hours.",
-        "Utilized the MERN stack for the web-based admin panel and Flutter for the mobile user app, ensuring a seamless user experience.",
-        "Provided admin features for menu, order, and inventory management, along with order management and tracking for users.",
+        "Utilized the MERN stack for the web-based admin panel and Flutter for the mobile user app, ensuring a seamless experience.",
+        "Provided admin features for menu, order, and inventory management, along with real-time tracking for users.",
         "Implemented secure user authentication and payment gateways to ensure data privacy and secure transactions."
       ],
       "techStack": [
@@ -69,12 +92,12 @@
     },
     {
       "name": "E-Estate",
-      "description": "MERN stack based E-Estate Web Application.",
+      "description": "MERN stack based E-Estate Web Application with advanced search and image management.",
       "keyPoints": [
-        "Enhanced user satisfaction by implementing advanced search filters, allowing users to refine property searches based on specific criteria such as location, price range, amenities, and property type.",
-        "Achieved efficient image storage management by leveraging Firebase's capabilities, resulting in reduced MongoDB storage utilization.",
+        "Implemented advanced search filters for properties based on location, price, and amenities, enhancing user satisfaction.",
+        "Achieved efficient image storage by leveraging Firebase, reducing MongoDB storage utilization significantly.",
         "Implemented robust authentication protocols to ensure secure user access and data protection.",
-        "Enhanced user accessibility by integrating Google Sign-In functionality, allowing users to log in securely using their Google accounts."
+        "Integrated Google Sign-In functionality for enhanced user accessibility and secure login."
       ],
       "techStack": [
         "React.JS",
@@ -90,12 +113,12 @@
     },
     {
       "name": "E-Commerce Web App",
-      "description": "MERN stack based E-commerce Web Application.",
+      "description": "Full-featured MERN stack E-commerce Application with admin and user panels.",
       "keyPoints": [
-        "Designed and developed intuitive admin and user panels that cater to the specific needs of both administrators and users.",
+        "Designed and developed intuitive admin and user panels catering to specific administrative and customer needs.",
         "Implemented a secure payment gateway to facilitate seamless and secure transactions within the application.",
-        "Developed advanced search filters and a user-friendly cart system, simplifying product discovery and checkout experience.",
-        "Implemented robust error-handling mechanisms to detect and manage system errors effectively, enhancing the application's reliability and performance."
+        "Developed advanced search filters and a user-friendly cart system for simplified product discovery.",
+        "Implemented robust error-handling mechanisms to manage system errors effectively and enhance reliability."
       ],
       "techStack": [
         "Node JS",

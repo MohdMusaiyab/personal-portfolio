@@ -4,7 +4,7 @@ const Resume = () => {
   return (
     <div className="flex items-center justify-center py-5 group">
       <a
-        href="https://drive.google.com/file/d/1F5RIaAOsME21UJlmXFDGae5NufwNBsZ7/view?usp=sharing"
+        href="https://drive.google.com/file/d/1DoJQ6utcStOsnQwvycPzRirq6FNgJjaJ/view?usp=sharing"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-400 hover:text-blue-600 hover:underline flex items-center"

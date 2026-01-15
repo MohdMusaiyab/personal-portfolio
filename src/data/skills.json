@@ -4,29 +4,23 @@
       "name": "Programming Languages",
       "url": "https://static.vecteezy.com/system/resources/previews/004/815/622/original/software-development-programming-language-coding-3d-isometric-laptop-computer-with-digital-application-isolated-on-white-background-design-vector.jpg",
       "skills": [
+        { "name": "Go (Golang)", "icon": "FaGo" },
+        { "name": "TypeScript", "icon": "FaDatabase" },
         { "name": "JavaScript", "icon": "FaJsSquare" },
-        { "name": "C++", "icon": "<FaReact />" },
-        { "name": "C", "icon": "FaNodeJs" },
-        { "name": "Typescript", "icon": "FaDatabase" }
+        { "name": "Java", "icon": "FaJava" },
+        { "name": "C++", "icon": "FaCode" },
+        { "name": "SQL", "icon": "FaDatabase" }
       ]
     },
     {
-      "name": "Backend",
+      "name": "Backend Development",
       "url": "https://t4.ftcdn.net/jpg/02/99/62/11/360_F_299621124_vutDKbNwRJG6poJRQQIMYfsc4tJCTO5E.jpg",
       "skills": [
-        { "name": "Express.js", "icon": "FaToolbox" },
+        { "name": "Gin Gonic", "icon": "FaRocket" },
         { "name": "Node.js", "icon": "FaServer" },
-        { "name": "Web-Sockets", "icon": "FaToolbox" }
-      ]
-    },
-    {
-      "name": "Tools and Technologies",
-      "url": "https://t4.ftcdn.net/jpg/04/90/33/39/360_F_490333979_EQdf0tNa0W7MdstKjrGwnjQjoxfYP2zO.jpg",
-      "skills": [
-        { "name": "Docker", "icon": "FaCube" },
-        { "name": "Kubernetes", "icon": "FaCube" },
-        { "name": "Redux", "icon": "FaToolbox" },
-        { "name": "Firebase", "icon": "FaToolbox" }
+        { "name": "Express.js", "icon": "FaToolbox" },
+        { "name": "WebSockets", "icon": "FaNetworkWired" },
+        { "name": "RESTful APIs", "icon": "FaPlug" }
       ]
     },
     {
@@ -34,30 +28,41 @@
       "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWgseiwlVfBo-60fELz9BiuSrB9mV9vlfX3Q&s",
       "skills": [
         { "name": "PostgreSQL", "icon": "FaDatabase" },
+        { "name": "MongoDB", "icon": "FaLeaf" },
         { "name": "MySQL", "icon": "FaDatabase" },
-        { "name": "MongoDB", "icon": "FaDatabase" },
-        { "name": "Prisma ORM", "icon": "FaToolbox" }
+        { "name": "GORM", "icon": "FaLink" },
+        { "name": "Prisma ORM", "icon": "FaLink" }
       ]
     },
     {
-      "name": "Frontend",
+      "name": "DevOps and Tools",
+      "url": "https://t4.ftcdn.net/jpg/04/90/33/39/360_F_490333979_EQdf0tNa0W7MdstKjrGwnjQjoxfYP2zO.jpg",
+      "skills": [
+        { "name": "Docker", "icon": "FaDocker" },
+        { "name": "AWS S3", "icon": "FaCloud" },
+        { "name": "Git / GitHub Actions", "icon": "FaGithub" },
+        { "name": "Postman", "icon": "FaTerminal" },
+        { "name": "Linux / Bash", "icon": "FaLinux" }
+      ]
+    },
+    {
+      "name": "Frontend Development",
       "url": "https://t3.ftcdn.net/jpg/05/31/71/02/360_F_531710260_ByieqNe7Ut6QBHgIR7xgdsxH7gICrHr1.jpg",
       "skills": [
-        { "name": "CSS", "icon": "FaCss3Alt" },
-        { "name": "Tailwind CSS", "icon": "FaToolbox" },
-        { "name": "Bootstrap", "icon": "FaBootstrap" },
         { "name": "React.JS", "icon": "FaReact" },
-        { "name": "Next JS", "icon": "RiNextjsLine" }
+        { "name": "Next.js", "icon": "RiNextjsLine" },
+        { "name": "Redux Toolkit", "icon": "FaBox" },
+        { "name": "Tailwind CSS", "icon": "FaWind" }
       ]
     },
     {
-      "name": "Other",
+      "name": "Core Competencies",
       "url": "https://document360.com/wp-content/uploads/2023/06/Introduction-to-APIs-1200x683.png",
       "skills": [
-        { "name": "API Development", "icon": "FaToolbox" },
-        { "name": "Authentication and Authorization", "icon": "FaToolbox" },
-        { "name": "Payment Gateway Integration", "icon": "FaToolbox" },
-        { "name": "Google Sign-In Integration", "icon": "FaToolbox" }
+        { "name": "System Design", "icon": "FaProjectDiagram" },
+        { "name": "RBAC Security", "icon": "FaLock" },
+        { "name": "Multi-tenant Architecture", "icon": "FaUsers" },
+        { "name": "Data Structures & Algorithms", "icon": "FaMicrochip" }
       ]
     }
   ]

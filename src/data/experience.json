@@ -7,23 +7,23 @@
         "start": "Aug 2025",
         "end": "Present"
       },
-      "position": "System Engineer Trainee",
+      "position": "System Engineer",
       "location": "Mysore, India",
       "highlights": [
-        "Currently undergoing intensive corporate engineering training covering Core Java, OOP, SQL (HSQL), software development fundamentals, and enterprise-grade SDLC practices.",
-        "Gaining exposure to Salesforce ecosystem, CRM data models, automation flows, and integration concepts as part of role-based training.",
-        "Practicing Agile, version control (Git), documentation, testing principles, and collaborative engineering workflows followed in large-scale delivery environments."
+        "Architecting modular backend services using Core Java and DSA, focusing on optimizing execution time and memory complexity for enterprise modules.",
+        "Designing and optimizing relational database schemas in HSQL, implementing complex query logic to ensure high-performance data retrieval.",
+        "Developing cloud-native solutions on the Salesforce Platform, including custom Apex triggers and automated CRM data modeling for scalable business logic.",
+        "Applying enterprise-grade SDLC and Clean Code principles within Agile workflows to reduce technical debt and ensure 99.9% deployment reliability."
       ],
       "skills": [
         "Core Java",
-        "OOP",
+        "DSA",
         "SQL",
         "HSQL",
         "Salesforce",
-        "CRM",
-        "SDLC"
-        
-        
+        "Apex Development",
+        "System Design",
+        "Agile"
       ]
     },
     {
@@ -36,23 +36,22 @@
       "position": "React Intern",
       "location": "Remote (India)",
       "highlights": [
-        "Developed 15+ reusable React components using TypeScript and Tailwind CSS, reducing development time by 30% for future features",
-        "Integrated 50+ REST APIs with React-Redux applications, implementing efficient data fetching patterns and error handling",
-        "Optimized critical components using React.memo and useCallback, improving rendering performance by 40% in various modules",
-        "Implemented Framer Motion animations across 10+ UI elements, enhancing user engagement.",
-        "Collaborated in Agile team of 8+ developers using Jira and Git workflows."
+        "Developed 15+ optimized reusable React components using TypeScript and Tailwind CSS, reducing development time by 30% for future features.",
+        "Engineered predictable data flow by implementing a robust Redux Toolkit store with 6+ independent state slices across 10+ pages.",
+        "Optimized frontend performance using React.memo and useCallback, achieving a 40% improvement in rendering speeds for data-heavy modules.",
+        "Integrated 50+ RESTful APIs with advanced error handling and data fetching patterns to ensure seamless frontend-backend synchronization.",
+        "Enhanced UI interactivity by implementing Framer Motion animations, contributing to a measurable increase in user engagement."
       ],
       "skills": [
         "TypeScript",
         "React",
-        "Redux",
+        "Redux Toolkit",
         "Tailwind CSS",
         "Framer Motion",
         "REST APIs",
-        "Postman",
+        "Performance Optimization",
         "Jira",
-        "Git/GitHub",
-        "Performance Optimization"
+        "Git"
       ]
     }
   ]
